@@ -38,6 +38,7 @@ nav .logo{
     font-size: 160px;
     color: white;
     font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .content a{
@@ -49,6 +50,7 @@ nav .logo{
     padding: 14px 50px;
     border-radius: 50px;
     margin-top: 50px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .back-video{
