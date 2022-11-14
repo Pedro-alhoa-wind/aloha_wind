@@ -21,3 +21,8 @@
 .card-4{
     font-family: 'Quicksand', sans-serif;
 }
+
+.flooter{
+    justify-content: center;
+    align-content: center;
+}
