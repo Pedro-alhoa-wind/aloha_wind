@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
     
+    
 
 }
 
-.container-fluid{
+#container{
     background: hsl(0, 0%, 75%);
     box-shadow: 0px 4px 5px #777;
 }
