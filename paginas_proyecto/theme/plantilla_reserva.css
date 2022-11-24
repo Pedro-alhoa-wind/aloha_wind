@@ -1,5 +1,7 @@
-*{
-    width: 0;
-    height: 0;
-    box-sizing: border-box;
+ 
+
+.container-fluid{
+    background: hsl(0, 0%, 75%);
+    box-shadow: 0px 4px 5px #777;
 }
+
