@@ -1,17 +1,8 @@
-*¨{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-#container{
-    background: hsl(0, 0%, 75%);
+.container-fluid{
+    background: hsl(0, 0%, 90%);
     box-shadow: 0px 4px 5px #777;
-    
 }
 
-#registrate{
-
-    font-family: 'Quicksand', sans-serif;
-
+.titulo{
+    font-family: 'Montserrat', sans-serif;
 }

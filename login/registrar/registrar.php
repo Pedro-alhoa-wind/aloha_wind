@@ -24,23 +24,23 @@
 <body style="background-color: #e3f2fd;">
 
     <!-- Cabecera -->
-    <div class="row">
-        <nav class="navbar navbar-expand-lg navbar-light mb-4">
-            <div class="container-fluid" id="container" style="display: flex; height: 130px;">
-
-                <div class="img">
-                    <a href="/index.html">
-                        <img src="/assets/imagenes/logo_aloha_wind.png" alt="logo" style="height: 7rem;">
-                    </a>
-                </div> 
-
-             </div>
-        </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-offset-2">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="my-2">
+                        <a href="#">
+                            <img src="/assets/imagenes/logo_aloha_wind.png" alt="logo" style="height: 7rem;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
     <!-- Cuerpo -->
 
-    <div class="row">
+    <div class="row my-3">
         <div class="">
             <p class="fs-2 text-center" id="registrate">REGISTRATE</p>
             <form name="form" action="registro.php" method="post">
