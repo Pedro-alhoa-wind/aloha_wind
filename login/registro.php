@@ -9,10 +9,13 @@ $telefono=$_POST['telefono'];
 $usuario=$_POST['usuario'];
 $password=$_POST['password'];
 
+echo "los datos son los siguientes: <br>";
+echo "$nombre,$apellido,$fecha_nacimiento,$nacionalidad,$telefono,$usuario,$password";
 
-    $conexion=crearConexion();
-    $sql="INSER INTO usuario (nombre, apellido, fecha_nacimiento, nacionalidad, telefono, usuario, password) 
-    VALUE ('$nombre', '$apellido', '$fecha_nacimiento', '$nacionalidad', '$telefono', '$usuario', '$password')";
-    $resul = mysqli_query($conexion, $sql);
+
+    // $conexion=crearConexion();
+    // $sql="INSER INTO usuario (nombre, apellido, fecha_nacimiento, nacionalidad, telefono, usuario, password) 
+    // VALUE ('$nombre', '$apellido', '$fecha_nacimiento', '$nacionalidad', '$telefono', '$usuario', '$password')";
+    // $resul = mysqli_query($conexion, $sql);
 
 ?>
