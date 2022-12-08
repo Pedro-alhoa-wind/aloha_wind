@@ -1,32 +1,32 @@
 <?php
- function crearConexion(){
-    $hostname = "localhost";
-    $usuariodb = "root";
-    $passworddb = "";
-    $dbname = "bd_alhoawind";
+//  function crearConexion(){
+//     $hostname = "localhost";
+//     $usuariodb = "root";
+//     $passworddb = "";
+//     $dbname = "bd_alhoawind";
 
-    //Generando la conexion con el servidor
+//     //Generando la conexion con el servidor
 
-    $conexion = mysqli_connect($hostname, $usuariodb, $passworddb, $dbname);
+//     $conexion = mysqli_connect($hostname, $usuariodb, $passworddb, $dbname);
 
-    // Si hay un error en la conexión, lo mostramos y detenemos
+//     // Si hay un error en la conexión, lo mostramos y detenemos
 
-    if (!$conexion){
-        die( "<br> Error de conexión con la base de datos: " . mysqli_connect_error());
-    }
-    else{
-        echo "Conexión exitosa";
-   }
-    return $conexion;
+//     if (!$conexion){
+//         die( "<br> Error de conexión con la base de datos: " . mysqli_connect_error());
+//     }
+//     else{
+//         echo "Conexión exitosa";
+//    }
+//     return $conexion;
 
-}
+// }
 
 //crearConexion();
 
 
 
 
-// include_once('db.php');
+include_once('db.php');
 //echo "los datos son los siguientes: <br>";
 // echo "$nombre,$apellido,$fecha_nacimiento,$nacionalidad,$telefono,$usuario,$password";
 

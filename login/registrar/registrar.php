@@ -30,7 +30,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="my-2">
                         <a href="#">
-                            <img src="/assets/imagenes/logo_aloha_wind.png" alt="logo" style="height: 7rem;">
+                            <img src="/assets/imagenes/logo_aloha_wind.png" alt="logo" style="height: 6rem;">
                         </a>
                     </div>
                 </div>
@@ -40,89 +40,90 @@
     
     <!-- Cuerpo -->
 
-    <div class="row my-3">
-        <div class="">
-            <p class="fs-2 text-center" id="registrate">REGISTRATE</p>
-            <form name="form" action="registro.php" method="post">
-                <div class="row">
-                    <div class="my-3 mx-5 input-group">  
-                        <div class="col-md-4">
-                            <label for="nombreUsuario" class="form-label">Nombre</label>
-                            <input id="nombreUsuario" class="form-control" name="nombre" type="text" placeholder="Escribe tu nombre...." required>
-                        </div>
-                        <div class="col-1"></div>
-                        <div class="col-md-5">
-                            <label for="apellidosUsuario" class="form-label">Apellidos</label>
-                            <input id="apellidosUsuario" class="form-control" name="apellido" type="text" placeholder="Escribe tu apellidos...." required>
-                        </div>
-                    </div>
-                </div>
-
-             
-                <div class="row">
-                    <div class="my-3 mx-5 input-group">  
-                        <div class="col-md-2">
-                            <label for="fechaNacUsuario" class="form-label">Fecha Nacimiento</label>
-                            <input id="fechaNacUsuario" class="form-control" name="fecha_nacimiento" type="text" placeholder="Escribe tu fecha nacim...." required>
-                        </div>
-                        <div class="col-1"></div>
-                        <div class="col-md-3">
-                            <label for="nacionalidadUsuario" class="form-label">Nacionalidad</label>
-                            <input id="nacionalidadUsuario" class="form-control" name="nacionalidad" type="text" placeholder="Escribe tu apellidos...." required>
-                        </div>
-                        <div class="col-1"></div>
-                        <div class="col-md-3">
-                            <label for="telefonoUsuario" class="form-label">Teléfono</label>
-                            <input id="telefonoUsuario" class="form-control" name="telefono" type="text" placeholder="Escribe tu teléfono...." required>
+    <div class="container">
+        <div class="row my-3">
+            <div class="">
+                <p class="fs-2 text-center" id="registrate">REGISTRATE</p>
+                <form name="form" action="registro.php" method="post">
+                    <div class="row">
+                        <div class="my-3 mx-5 input-group">  
+                            <div class="col-md-4">
+                                <label for="nombreUsuario" class="form-label">Nombre</label>
+                                <input id="nombreUsuario" class="form-control" name="nombre" type="text" placeholder="Escribe tu nombre...." required>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-md-5">
+                                <label for="apellidosUsuario" class="form-label">Apellidos</label>
+                                <input id="apellidosUsuario" class="form-control" name="apellido" type="text" placeholder="Escribe tu apellidos...." required>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-
-                <div class="row">
-                    <div class="my-3 mx-5 input-group">  
-                        <div class="col-md-3">
-                            <label for="usuario" class="form-label">Nombre usuario</label>
-                            <input id="usuario" class="form-control" name="usuario" type="text" placeholder="Escribe tu nombre Usuario...." required>
+                
+                    <div class="row">
+                        <div class="my-3 mx-5 input-group">  
+                            <div class="col-md-2">
+                                <label for="fechaNacUsuario" class="form-label">Fecha Nacimiento</label>
+                                <input id="fechaNacUsuario" class="form-control" name="fecha_nacimiento" type="text" placeholder="Escribe tu fecha nacim...." required>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-md-3">
+                                <label for="nacionalidadUsuario" class="form-label">Nacionalidad</label>
+                                <input id="nacionalidadUsuario" class="form-control" name="nacionalidad" type="text" placeholder="Escribe tu apellidos...." required>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-md-3">
+                                <label for="telefonoUsuario" class="form-label">Teléfono</label>
+                                <input id="telefonoUsuario" class="form-control" name="telefono" type="text" placeholder="Escribe tu teléfono...." required>
+                            </div>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="mb-3">
-                            <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-control" name="password" id="password" placeholder="Escribe tu password..." required>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="my-3 mx-5 input-group">  
+                            <div class="col-md-3">
+                                <label for="usuario" class="form-label">Nombre usuario</label>
+                                <input id="usuario" class="form-control" name="usuario" type="text" placeholder="Escribe tu nombre Usuario...." required>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" name="password" id="password" placeholder="Escribe tu password..." required>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="my-3 mx-5">
+                            <div class="col-md-12">
+                            <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="" id="terms" required>
+                                    <label for="terms" class="form-check-label">Acepto los términos y condiciones</label>
+                            </div> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="my-3 mx-5">
+                            <div class="col-md-5">
+                                <button type="submit" class="btn btn-primary btn-lg"> Enviar </button>
+        
+                            </div>
                         </div>
                         
+
                     </div>
-                </div>
 
-                <div class="row">
-                    <div class="my-3 mx-5">
-                        <div class="col-md-12">
-                           <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="" id="terms" required>
-                                <label for="terms" class="form-check-label">Acepto los términos y condiciones</label>
-                           </div> 
-                        </div>
-                    </div>
-                </div>
+                </form>
 
-                <div class="row">
-                    <div class="my-3 mx-5">
-                        <div class="col-md-5">
-                            <button type="submit" class="btn btn-primary btn-lg"> Enviar </button>
-    
-                        </div>
-                    </div>
-                    
 
-                </div>
-
-            </form>
-
+            </div>
 
         </div>
-
     </div>
-
      <!-- Pie -->
 
      <div class="container">
