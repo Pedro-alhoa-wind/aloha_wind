@@ -44,7 +44,7 @@
         <div class="row my-3">
             <div class="">
                 <p class="fs-2 text-center" id="registrate">REGISTRATE</p>
-                <form name="form" action="registro.php" method="post">
+                <form name="form" action="/login/registrar/registro.php" method="post">
                     <div class="row">
                         <div class="my-3 mx-5 input-group">  
                             <div class="col-md-4">
@@ -109,7 +109,7 @@
                     <div class="row">
                         <div class="my-3 mx-5">
                             <div class="col-md-5">
-                                <button type="submit" class="btn btn-primary btn-lg"> Enviar </button>
+                                <button type="submit" name="enviar" class="btn btn-primary btn-lg"> Enviar </button>
         
                             </div>
                         </div>

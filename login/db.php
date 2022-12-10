@@ -1,7 +1,7 @@
 <?php
 
 //  Configuración necesaria para acceder a la base de datos
- function crearConexion(){
+
      $hostname = "localhost";
      $usuariodb = "root";
      $passworddb = "";
@@ -13,18 +13,18 @@
 
      // Si hay un error en la conexión, lo mostramos y detenemos
 
-     if (!$conexion){
-         die( "<br> Error de conexión con la base de datos: " . mysqli_connect_error());
-     }
-     else{
-         echo "Conexión exitosa";
-    }
-     return $conexion;
+//       if (!$conexion){
+//           die( "<br> Error de conexión con la base de datos: " . mysqli_connect_error());
+//      }
+//       else{
+//           echo "Conexión exitosa";
+//     }
+//      return $conexion;
 
- }
+ 
 
- function cerrarConexion($conexion){
-     mysqli_close($conexion);
- }
+//  function cerrarConexion($conexion){
+//      mysqli_close($conexion);
+//  }
 
 ?>
