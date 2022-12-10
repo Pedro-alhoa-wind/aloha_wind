@@ -65,13 +65,6 @@
                 </div>
         </div>
     </div>
-
-
-
-
-
-
-
     <script src="/libls/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
