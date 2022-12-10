@@ -1,5 +1,6 @@
 <?php
-include("../db.php");
+
+include('db_registrar.php');
 //echo "los datos son los siguientes: <br>";
 // echo "$nombre,$apellido,$fecha_nacimiento,$nacionalidad,$telefono,$usuario,$password";
 
@@ -16,8 +17,8 @@ include("../db.php");
 
 
 // $conexion=crearConexion();
- $sql="INSER INTO usuario (nombre, apellido, fecha_nacimiento, nacionalidad, telefono, usuario, password)
- VALUES ('$nombre', '$apellido', '$fecha_nacimiento', '$nacionalidad', '$telefono', '$usuario', '$password')";
- $query=mysqli_query($conexion, $sql);
+$consulta="INSERT INTO `usuario`(`nombre`, `apellido`, `fecha_nacimiento`, `nacionalidad`, `telefono`, `usuario`, `password`) VALUES ('$nombre','$apellido','$fecha_nacimiento','$nacionalidad','$telefono','$usuario','$password')";
+ 
+ $resultado=mysqli_query($conexion, $consulta);
 
 ?>

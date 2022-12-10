@@ -44,7 +44,7 @@
         <div class="row my-3">
             <div class="">
                 <p class="fs-2 text-center" id="registrate">REGISTRATE</p>
-                <form name="form" action="/login/registrar/registro.php" method="post">
+                <form name="form" action="/login/registrar/registro.php" method="POST">
                     <div class="row">
                         <div class="my-3 mx-5 input-group">  
                             <div class="col-md-4">
