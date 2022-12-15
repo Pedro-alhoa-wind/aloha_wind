@@ -233,7 +233,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
+                        <span>Copyright © 2022 Alhoa-Wind by Pedro Sánchez Palomino</span>
                     </div>
                 </div>
             </footer>
