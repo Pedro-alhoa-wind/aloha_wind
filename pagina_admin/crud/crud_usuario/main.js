@@ -30,8 +30,8 @@ $(document).ready(function(){
         $(".modal-header").css("background-color", "red");
         $(".modal-header").css("color", "white");
         $(".modal-title").text("Nueva Persona");
-
         $("#modalCRUD").modal("show");
+        id=null;
 
     });
 
@@ -49,21 +49,21 @@ $(document).ready(function(){
             url: "pagina_admin/crud/crud_usuario/bd/crud.php",
             type: "POST",
             dataType: "json",
-            data: {nombre:nombre, apellido:apellido, nacionalidad:nacionalidad, telefono:telefono, usuairo:usuairo, password:password},
+            data: {nombre:nombre, apellido:apellido, nacionalidad:nacionalidad, telefono:telefono, usuairo:usuairo, password:password, id:id},
             success: function(data){
-                var datos = JSON.parse(data);
-                id = datos[0].id;
-                nombre = datos[0].nombre;
-                apellido = datos[0].apellido;
-                nacionalidad = datos[0].nacionalidad;
-                telefono = datos[0].telefono;
-                usuairo = datos[0].usuairo;
-                password = datos[0].password;
+                id = data[0].id;
+                nombre = data[0].nombre;
+                apellido = data[0].apellido;
+                nacionalidad = data[0].nacionalidad;
+                telefono = data[0].telefono;
+                usuairo = data[0].usuairo;
+                password = data[0].password;
                 tablaPersonas.row.add([id,nombre,apellido,nacionalidad,telefono,usuairo,password]).draw();
             }
 
         
         })
         $("#modalCRUD").modal("hide");
+
     });
 });
