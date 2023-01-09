@@ -22,7 +22,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <button id="btnNuevo" type="button" class="btn btn-success"> Nuevo</button>
+                    <button id="btnNuevo" type="button" class="btn btn-warning"> Nuevo</button>
                 </div>
             </div>
         </div>
@@ -76,7 +76,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Nuevo Usuario</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="close"> <span aria-hidden="true">&times;</span></button>
                     </div>
                 <form id="formPersonas">
