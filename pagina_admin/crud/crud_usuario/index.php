@@ -1,3 +1,18 @@
+<?php
+include_once '/wamp64/www/aloha_wind/pagina_admin/crud/crud_usuario/bd/conexion.php';
+$objeto = new Conexion();
+$conexion = $objeto->Conectar();
+
+$consulta = "SELECT id_usuario, nombre, apellido, nacionalidad, telefono, email, password FROM usuario";
+$resultado = $conexion->prepare($consulta);
+$resultado->execute();
+$data=$resultado->fetchAll(PDO::FETCH_ASSOC);
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -46,23 +61,22 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                <?php
+                                foreach($data as $dat){
+                                ?>
                                 <tr>
+                                    <td><?php echo $dat['id_usuario']?></td>
+                                    <td><?php echo $dat['nombre']?></td>
+                                    <td><?php echo $dat['apellido']?></td>
+                                    <td><?php echo $dat['nacionalidad']?></td>
+                                    <td><?php echo $dat['telefono']?></td>
+                                    <td><?php echo $dat['email']?></td>
+                                    <td><?php echo $dat['password']?></td>
                                     <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>
-                                        <div class="text-center">
-                                            <div class="btn-group">
-                                                <button class="btn btn-primary btnEditar">Editar</button>
-                                                <button class="btn btn-danger btnBorrar">Borrar</button>
-                                            </div>
-                                        </div>
-                                    </td>
                                 </tr>
+                                <?php
+                                    }
+                                ?>   
                             </tbody>
                         </table>
                     </div>
