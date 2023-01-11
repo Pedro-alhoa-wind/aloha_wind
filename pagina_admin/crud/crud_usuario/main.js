@@ -3,7 +3,7 @@ $(document).ready(function(){
         "columnDefs":[{
         "targets":-1,
         "data":null,
-        "defaultContent": "<div class='text-center'><div class='btn-group'><button class='btn btn-primary btnEditar'>Editar</button><button class='btn btn-danger btnBorrar'>Borrar</div></div>"    
+        "defaultContent": "<div class='text-center'><div class='btn-group'><button class='btn btn-primary btnEditar'>Editar</button><button class='btn btn-danger btnBorrar'>Borrar</button></div></div>"    
         }],
 
         // Ponerlo en español
@@ -43,22 +43,22 @@ $(document).ready(function(){
         apellido = $.trim($("#apellido").val());
         nacionalidad = $.trim($("#nacionalidad").val());
         telefono = $.trim($("#telefono").val());
-        usuairo = $.trim($("#usuairo").val());
+        usuario = $.trim($("#usuario").val());
         password = $.trim($("#password").val());
         $.ajax({
             url: "pagina_admin/crud/crud_usuario/bd/crud.php",
             type: "POST",
             dataType: "json",
-            data: {nombre:nombre, apellido:apellido, nacionalidad:nacionalidad, telefono:telefono, usuairo:usuairo, password:password, id:id},
+            data: {nombre:nombre, apellido:apellido, nacionalidad:nacionalidad, telefono:telefono, usuario:usuario, password:password, id:id},
             success: function(data){
                 id = data[0].id;
                 nombre = data[0].nombre;
                 apellido = data[0].apellido;
                 nacionalidad = data[0].nacionalidad;
                 telefono = data[0].telefono;
-                usuairo = data[0].usuairo;
+                usuario = data[0].usuario;
                 password = data[0].password;
-                tablaPersonas.row.add([id,nombre,apellido,nacionalidad,telefono,usuairo,password]).draw();
+                tablaPersonas.row.add([id,nombre,apellido,nacionalidad,telefono,usuario,password]).draw();
             }
 
         

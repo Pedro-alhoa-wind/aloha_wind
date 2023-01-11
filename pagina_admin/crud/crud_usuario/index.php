@@ -55,7 +55,7 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
                                     <th>Apellido</th>
                                     <th>Nacionalidad</th>
                                     <th>Teléfono</th>
-                                    <th>Email</th>
+                                    <th>Usuario</th>
                                     <th>Password</th>
                                     <th>Acciones</th>
                                 </tr>
@@ -70,7 +70,7 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
                                     <td><?php echo $dat['apellido']?></td>
                                     <td><?php echo $dat['nacionalidad']?></td>
                                     <td><?php echo $dat['telefono']?></td>
-                                    <td><?php echo $dat['email']?></td>
+                                    <td><?php echo $dat['usuario']?></td>
                                     <td><?php echo $dat['password']?></td>
                                     <td></td>
                                 </tr>
