@@ -37,7 +37,7 @@ $(document).ready(function(){
 
 
     $("#formPersonas").submit(function(e){
-        e.preventDefaul();
+        e.preventDefault();
         id = $.trim($("#id").val());
         nombre = $.trim($("#nombre").val());
         apellido = $.trim($("#apellido").val());
@@ -46,11 +46,12 @@ $(document).ready(function(){
         usuario = $.trim($("#usuario").val());
         password = $.trim($("#password").val());
         $.ajax({
-            url: "pagina_admin/crud/crud_usuario/bd/crud.php",
+            url: "../crud_usuario/bd/crud.php",
             type: "POST",
             dataType: "json",
             data: {nombre:nombre, apellido:apellido, nacionalidad:nacionalidad, telefono:telefono, usuario:usuario, password:password, id:id},
             success: function(data){
+                console.log(data);
                 id = data[0].id;
                 nombre = data[0].nombre;
                 apellido = data[0].apellido;
@@ -58,11 +59,12 @@ $(document).ready(function(){
                 telefono = data[0].telefono;
                 usuario = data[0].usuario;
                 password = data[0].password;
-                tablaPersonas.row.add([id,nombre,apellido,nacionalidad,telefono,usuario,password]).draw();
+                if (opcion == 1){tablaPersonas.row.add([id,nombre,apellido,nacionalidad,telefono,usuario,password]).draw();}
+                else{tablaPersonas.row(fila).data([id,nombre,apellido,nacionalidad,telefono,usuario,password]).draw();}
             }
 
         
-        })
+        });
         $("#modalCRUD").modal("hide");
 
     });

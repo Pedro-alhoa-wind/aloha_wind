@@ -65,7 +65,7 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
                                 foreach($data as $dat){
                                 ?>
                                 <tr>
-                                    <td><?php echo $dat['id_usuario']?></td>
+                                    <td><?php echo $dat['id']?></td>
                                     <td><?php echo $dat['nombre']?></td>
                                     <td><?php echo $dat['apellido']?></td>
                                     <td><?php echo $dat['nacionalidad']?></td>

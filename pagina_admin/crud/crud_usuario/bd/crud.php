@@ -3,6 +3,8 @@ include_once '/wamp64/www/aloha_wind/pagina_admin/crud/crud_usuario/bd/conexion.
 $objeto= new Conexion();
 $conexion = $objeto->Conectar();
 
+
+$id = (isset($_POST['id'])) ? $_POST['id'] : '';
 $nombre = (isset($_POST['nombre'])) ? $_POST['nombre'] : '';
 $apellido = (isset($_POST['apellido'])) ? $_POST['apellido'] : '';
 $nacionalidad = (isset($_POST['nacionalidad'])) ? $_POST['nacionalidad'] : '';
@@ -14,7 +16,7 @@ $consulta = "INSERT INTO usuario (nombre, apellido, nacionalidad, telefono, usua
 $resultado = $conexion->prepare($consulta);
 $resultado->execute();
 
-$consulta = "SELECT id_usuario, nombre, apellido, nacionalidad, telefono, usuario, password FROM usuario ORDER BY id_usuario DESC LIMIT 1";
+$consulta = "SELECT id, nombre, apellido, nacionalidad, telefono, usuario, password FROM usuario ORDER BY id DESC LIMIT 1";
 $resultado = $conexion->prepare($consulta);
 $resultado->execute();
 
