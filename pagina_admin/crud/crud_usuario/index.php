@@ -37,12 +37,11 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <button id="btnNuevo" type="button" class="btn btn-warning"> Nuevo</button>
+                    <button id="btnNuevo" type="button" class="btn btn-warning" data-toggle="modal"> Nuevo</button>
                 </div>
             </div>
         </div>
-
-
+        <br>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
