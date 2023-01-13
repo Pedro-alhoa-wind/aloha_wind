@@ -26,11 +26,11 @@ switch($opcion){
 
     case 1:
 
-        $consulta = "INSERT INTO usuario (nombre, apellido, nacionalidad, telefono, usuario, password) VALUES ('$nombre', '$apellido', '$nacionalidad', '$telefono', '$usuario', '$password')";
+        $consulta = "INSERT INTO 'usuario' ('nombre', 'apellido', 'nacionalidad', 'telefono', 'usuario', 'password') VALUES ('$nombre', '$apellido', '$nacionalidad', '$telefono', '$usuario', '$password')";
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();
 
-        $consulta = "SELECT id, nombre, apellido, nacionalidad, telefono, usuario, password FROM usuario ORDER BY id DESC LIMIT 1";
+        $consulta = "SELECT 'id', 'nombre', 'apellido', 'nacionalidad', 'telefono', 'usuario', 'password' FROM 'usuario' ORDER BY 'id' DESC LIMIT 1";
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();
         $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
