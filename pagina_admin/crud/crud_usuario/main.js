@@ -32,6 +32,7 @@ $(document).ready(function(){
         $(".modal-title").text("Nueva Persona");
         $("#modalCRUD").modal("show");
         id=null;
+        opcion = 1;
 
     });
 
@@ -59,7 +60,7 @@ $(document).ready(function(){
                 telefono = data[0].telefono;
                 usuario = data[0].usuario;
                 password = data[0].password;
-                if (opcion == 1){tablaPersonas.row.add([id,nombre,apellido,nacionalidad,telefono,usuario,password]).draw();}
+                if(opcion == 1){tablaPersonas.row.add([id,nombre,apellido,nacionalidad,telefono,usuario,password]).draw();}
                 else{tablaPersonas.row(fila).data([id,nombre,apellido,nacionalidad,telefono,usuario,password]).draw();}
             }
 

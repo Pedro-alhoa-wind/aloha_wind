@@ -17,15 +17,15 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width-device-width, initial-scale-1">
-        <link rel="shortcut icon" href="#">
+        <meta name="viewport" content="width-device-width, initial-scale-1, shrink-to-fit=no">
+        <link rel="shortcut icon" href="#"/>
         
         <title> CRUD </title>
 
         <link rel="stylesheet" href="/libls/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="/pagina_admin/crud/crud_usuario/main.css">
 
-        <link rel="stylesheet" type="text/css" href="/pagina_admin/crud/datatables/datatables.min.css">
+        <link rel="stylesheet" type="text/css" href="/pagina_admin/crud/datatables/datatables.min.css"/>
         <link rel="stylesheet" type="text/css" href="/pagina_admin/crud/datatables/DataTables-1.13.1/css/dataTables.bootstrap4.min.css">
     </head>
 
