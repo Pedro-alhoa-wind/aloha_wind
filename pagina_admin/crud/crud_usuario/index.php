@@ -135,7 +135,7 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
 
         <!-- Bootstrap.js, jQuery.js, Popper.js -->
         <script src="/libls/bootstrap/js/bootstrap.min.js"></script>
-        <script src="/libls/bootstrap/jquery/jquery-3.6.1.min.js"></script>
+        <script src="/libls/bootstrap/jquery/jquery-3.3.1.min.js"></script>
         <script src="/libls/bootstrap/popper/popper.min.js"></script>
 
         <!-- datatables.js -->
