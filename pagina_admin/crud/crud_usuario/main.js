@@ -12,12 +12,12 @@ $(document).ready(function(){
             "lengthMenu": "Mostrar _MENU_ registros",
             "zeroRecords": "No se encontraron resultados",
             "info": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-            "infoFiltered": "Mostrando registros del 0 al 0 de un total de 0 registros",
+            "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
             "infoFiltered": "(filtrado de un total de _MAX_ registros)",
-            "sSearch": "Buscar",
+            "sSearch": "Buscar:",
             "oPaginate":{
                 "sFirst": "Primero",
-                "sLast": "Ultimo",
+                "sLast": "Último",
                 "sNext": "Siguiente",
                 "sPrevious": "Anterior"
             },
@@ -37,9 +37,55 @@ $(document).ready(function(){
     });
 
 
+    var fila;
+
+    $(document).on("click", ".btnEditar", function(){
+        fila = $(this).closest("tr");
+        id = parseInt(fila.find('td:eq(0)').text());
+        nombre = fila.find('td:eq(1)').text();
+        apellido = fila.find('td:eq(2)').text();
+        nacionalidad = fila.find('td:eq(3)').text();
+        telefono = parseInt (fila.find('td:eq(4)').text());
+        usuario = fila.find('td:eq(5)').text();
+        password = fila.find('td:eq(6)').text();
+
+        $("#nombre").val(nombre);
+        $("#apellido").val(apellido);
+        $("#nacionalidad").val(nacionalidad);
+        $("#telefono").val(telefono);
+        $("#usuario").val(usuario);
+        $("#password").val(password);
+        opcion = 2;
+
+        $(".modal-header").css("background-color", "#007bff");
+        $(".modal-header").css("color", "white");
+        $(".modal-title").text("Editar Persona");
+        $("#modalCRUD").modal("show");
+
+    });
+
+    
+
+    $(document).on("click", ".btnBorrar", function(){
+        fila = $(this);
+        id = parseInt($(this).closest("tr").find('td:eq(0)').text());
+        opcion = 3
+        var respueta = confirm("¿Está seguro que quiere eliminar el usuario: "+id+"?");
+        if(respuesta){
+            $.ajax({
+                url: "/wamp64/www/aloha_wind/pagina_admin/crud/crud_usuario/bd/crud.php",
+                type: "POST",
+                dataType: "json",
+                data: {opcion:opcion, id:id},
+                success: function (){
+                    tablaPersonas.row(fila.parents ('tr')).remove().draw();
+                }
+            });
+        }
+    });
+
     $("#formPersonas").submit(function(e){
         e.preventDefault();
-        id = $.trim($("#id").val());
         nombre = $.trim($("#nombre").val());
         apellido = $.trim($("#apellido").val());
         nacionalidad = $.trim($("#nacionalidad").val());
@@ -47,10 +93,10 @@ $(document).ready(function(){
         usuario = $.trim($("#usuario").val());
         password = $.trim($("#password").val());
         $.ajax({
-            url: "../crud_usuario/bd/crud.php",
+            url: "/wamp64/www/aloha_wind/pagina_admin/crud/crud_usuario/bd/crud.php",
             type: "POST",
             dataType: "json",
-            data: {nombre:nombre, apellido:apellido, nacionalidad:nacionalidad, telefono:telefono, usuario:usuario, password:password, id:id},
+            data: {nombre:nombre, apellido:apellido, nacionalidad:nacionalidad, telefono:telefono, usuario:usuario, password:password, id:id, opcion:opcion},
             success: function(data){
                 console.log(data);
                 id = data[0].id;

@@ -3,7 +3,7 @@ include_once '/wamp64/www/aloha_wind/pagina_admin/crud/crud_usuario/bd/conexion.
 $objeto = new Conexion();
 $conexion = $objeto->Conectar();
 
-$consulta = "SELECT id_usuario, nombre, apellido, nacionalidad, telefono, email, password FROM usuario";
+$consulta = "SELECT id, nombre, apellido, nacionalidad, telefono, usuario, password FROM usuario";
 $resultado = $conexion->prepare($consulta);
 $resultado->execute();
 $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
@@ -14,10 +14,10 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
 
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width-device-width, initial-scale-1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="shortcut icon" href="#"/>
         
         <title> CRUD </title>
@@ -89,8 +89,9 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Nuevo Usuario</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="close"> <span aria-hidden="true">&times;</span></button>
+                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
                 <form id="formPersonas">
                     <div class="modal-body">
@@ -120,7 +121,7 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" id="btnCancelar" class="btn btn-light" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-light" data-dismiss="modal">Cancelar</button>
                         <button type="submit" id="btnGuardar" class="btn btn-dark">Guardar</button>
                     </div>
                 </form>   
