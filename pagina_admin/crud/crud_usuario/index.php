@@ -27,7 +27,10 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
     <!--datables CSS básico-->
     <link rel="stylesheet" type="text/css" href="datatables/datatables.min.css"/>
     <!--datables estilo bootstrap 4 CSS-->  
-    <link rel="stylesheet"  type="text/css" href="datatables/DataTables-1.13.1/css/dataTables.bootstrap4.min.css">       
+    <link rel="stylesheet"  type="text/css" href="datatables/DataTables-1.13.1/css/dataTables.bootstrap4.min.css">
+    <!-- FUENTE -->
+    <script src="https://kit.fontawesome.com/d3532511de.js" crossorigin="anonymous"></script>
+    
   </head>
     
   <body> 
@@ -135,8 +138,17 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
     <script src="bootstrap/js/bootstrap.min.js"></script>
       
     <!-- datatables JS -->
-    <script type="text/javascript" src="datatables/datatables.min.js"></script>    
-     
+    <script type="text/javascript" src="datatables/datatables.min.js"></script> 
+    
+    <!-- BOTONES DATATABLES -->
+    <script src="datatables/Buttons-2.3.3/js/dataTables.buttons.min.js"></script>
+    <script src="datatables/JSZip-2.5.0/jszip.min.js"></script>
+    <script src="datatables/pdfmake-0.1.36/pdfmake.min.js"></script>
+    <script src="datatables/pdfmake-0.1.36/vfs_fonts.js"></script>
+    <script src="datatables/Buttons-2.3.3/js/buttons.html5.min.js"></script>
+
+
+    <!-- NUESTRO JS  -->
     <script type="text/javascript" src="main.js"></script>  
     
     
