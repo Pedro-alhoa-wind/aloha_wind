@@ -54,7 +54,7 @@
      <!-- datatables JS -->
      <script type="text/javascript" src="vendor/datatables/datatables.min.js"></script>    
      
-     <script type="text/javascript" src="main.js"></script>
+     <script type="text/javascript" src="main_usuario.js"></script>
 
 </body>
 
