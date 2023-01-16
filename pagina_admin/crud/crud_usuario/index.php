@@ -27,7 +27,7 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
     <!--datables CSS básico-->
     <link rel="stylesheet" type="text/css" href="datatables/datatables.min.css"/>
     <!--datables estilo bootstrap 4 CSS-->  
-    <link rel="stylesheet"  type="text/css" href="datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css">       
+    <link rel="stylesheet"  type="text/css" href="datatables/DataTables-1.13.1/css/dataTables.bootstrap4.min.css">       
   </head>
     
   <body> 
