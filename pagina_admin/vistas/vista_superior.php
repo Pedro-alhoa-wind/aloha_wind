@@ -20,6 +20,12 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
+    <!-- CSS datables  -->
+
+    <link rel="stylesheet" type="text/css" href="vendor/datatables/datatables.min.css"/>
+    <!--datables bootstrap 4 CSS-->  
+    <link rel="stylesheet"  type="text/css" href="vendor/datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css"> 
+
 </head>
 
 <body id="page-top">

@@ -51,6 +51,11 @@
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
 
+     <!-- datatables JS -->
+     <script type="text/javascript" src="vendor/datatables/datatables.min.js"></script>    
+     
+     <script type="text/javascript" src="main.js"></script>
+
 </body>
 
 </html>
