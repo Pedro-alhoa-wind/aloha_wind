@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    tablaPersonas = $("#tablaPersonas").DataTable({
+    tablaMonitor = $("#tablaMonitor").DataTable({
        "columnDefs":[{
         "targets":-1,
         "data":null,
@@ -108,7 +108,7 @@ $(document).on("click", ".btnBorrar", function(){
             dataType: "json",
             data: {opcion:opcion, id:id},
             success: function(){
-                tablaPersonas.row(fila.parents('tr')).remove().draw();
+                tablaMonitor.row(fila.parents('tr')).remove().draw();
             }
         });
     }   
@@ -136,8 +136,8 @@ $("#formPersonas").submit(function(e){
             telefono = data[0].telefono;
             usuario = data[0].usuario;
             password = data[0].password;
-            if(opcion == 1){tablaPersonas.row.add([id,nombre,apellido,nacionalidad,telefono,usuario,password]).draw();}
-            else{tablaPersonas.row(fila).data([id,nombre,apellido,nacionalidad,telefono,usuario,password]).draw();}            
+            if(opcion == 1){tablaMonitor.row.add([id,nombre,apellido,nacionalidad,telefono,usuario,password]).draw();}
+            else{tablaMonitor.row(fila).data([id,nombre,apellido,nacionalidad,telefono,usuario,password]).draw();}            
         }        
     });
     $("#modalCRUD").modal("hide");    
