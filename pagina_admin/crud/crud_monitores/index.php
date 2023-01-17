@@ -96,7 +96,7 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
                 </button>
             </div>
-        <form id="formPersonas">    
+        <form id="formMonitor">    
             <div class="modal-body">
                 <div class="form-group">
                 <label for="deporte" class="col-form-label">Deporte:</label>
@@ -116,7 +116,7 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
                 </div>
                 <div class="form-group">
                 <label for="telefono" class="col-form-label">Teléfono:</label>
-                <input type="text" class="form-control" id="telefono">
+                <input type="numer" class="form-control" id="telefono">
                 </div>
                 <div class="form-group">
                 <label for="email" class="col-form-label">Email:</label>

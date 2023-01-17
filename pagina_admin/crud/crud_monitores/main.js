@@ -55,10 +55,10 @@ $(document).ready(function(){
     });
     
 $("#btnNuevo").click(function(){
-    $("#formPersonas").trigger("reset");
+    $("#formMonitor").trigger("reset");
     $(".modal-header").css("background-color", "#28a745");
     $(".modal-header").css("color", "white");
-    $(".modal-title").text("Nueva Persona");            
+    $(".modal-title").text("Nueva Monitor");            
     $("#modalCRUD").modal("show");        
     id=null;
     opcion = 1; //alta
@@ -70,24 +70,24 @@ var fila; //capturar la fila para editar o borrar el registro
 $(document).on("click", ".btnEditar", function(){
     fila = $(this).closest("tr");
     id = parseInt(fila.find('td:eq(0)').text());
-    nombre = fila.find('td:eq(1)').text();
-    apellido = fila.find('td:eq(2)').text();
-    nacionalidad = fila.find('td:eq(3)').text();
-    telefono = parseInt(fila.find('td:eq(4)').text());
-    usuario = fila.find('td:eq(5)').text();
-    password = fila.find('td:eq(6)').text();
+    deporte = fila.find('td:eq(1)').text();
+    dni = fila.find('td:eq(2)').text();
+    nombre = fila.find('td:eq(3)').text();
+    apellido = fila.find('td:eq(4)').text();
+    telefono = parseInt(fila.find('td:eq(5)').text());
+    email = fila.find('td:eq(6)').text();
     
+    $("#deporte").val(deporte);
+    $("#dni").val(dni);
     $("#nombre").val(nombre);
     $("#apellido").val(apellido);
-    $("#nacionalidad").val(nacionalidad);
     $("#telefono").val(telefono);
-    $("#usuario").val(usuario);
-    $("#password").val(password);
+    $("#email").val(email);
     opcion = 2; //editar
     
     $(".modal-header").css("background-color", "#007bff");
     $(".modal-header").css("color", "white");
-    $(".modal-title").text("Editar Persona");            
+    $(".modal-title").text("Editar Monitor");            
     $("#modalCRUD").modal("show");  
     
 });
@@ -114,30 +114,30 @@ $(document).on("click", ".btnBorrar", function(){
     }   
 });
     
-$("#formPersonas").submit(function(e){
+$("#formMonitor").submit(function(e){
     e.preventDefault();    
+    deporte = $.trim($("#deporte").val());
+    dni = $.trim($("#dni").val());
     nombre = $.trim($("#nombre").val());
     apellido = $.trim($("#apellido").val());
-    nacionalidad = $.trim($("#nacionalidad").val());
     telefono = $.trim($("#telefono").val());
-    usuario = $.trim($("#usuario").val());
-    password = $.trim($("#password").val());    
+    email = $.trim($("#email").val());    
     $.ajax({
         url: "bd/crud.php",
         type: "POST",
         dataType: "json",
-        data: {nombre:nombre, apellido:apellido, nacionalidad:nacionalidad, telefono:telefono, usuario:usuario, password:password, id:id, opcion:opcion},
+        data: {deporte:deporte, dni:dni, nombre:nombre, apellido:apellido, telefono:telefono, email:email, id:id, opcion:opcion},
         success: function(data){  
             console.log(data);
-            id = data[0].id;            
+            id = data[0].id;
+            deporte = data[0].deporte;
+            dni = data[0].dni;            
             nombre = data[0].nombre;
             apellido = data[0].apellido;
-            nacionalidad = data[0].nacionalidad;
             telefono = data[0].telefono;
-            usuario = data[0].usuario;
-            password = data[0].password;
-            if(opcion == 1){tablaMonitor.row.add([id,nombre,apellido,nacionalidad,telefono,usuario,password]).draw();}
-            else{tablaMonitor.row(fila).data([id,nombre,apellido,nacionalidad,telefono,usuario,password]).draw();}            
+            email = data[0].email;
+            if(opcion == 1){tablaMonitor.row.add([id,deporte,dni,nombre,apellido,telefono,email]).draw();}
+            else{tablaMonitor.row(fila).data([id,deporte,dni,nombre,apellido,telefono,email]).draw();}            
         }        
     });
     $("#modalCRUD").modal("hide");    
