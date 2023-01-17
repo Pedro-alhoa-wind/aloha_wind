@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    tablaClases = $("#tablaClases").DataTable({
+    tablaVelas = $("#tablaVelas").DataTable({
        "columnDefs":[{
         "targets":-1,
         "data":null,
@@ -55,10 +55,10 @@ $(document).ready(function(){
     });
     
 $("#btnNuevo").click(function(){
-    $("#formClases").trigger("reset");
+    $("#formVelas").trigger("reset");
     $(".modal-header").css("background-color", "#28a745");
     $(".modal-header").css("color", "white");
-    $(".modal-title").text("Nueva Persona");            
+    $(".modal-title").text("Nueva Velas");            
     $("#modalCRUD").modal("show");        
     id=null;
     opcion = 1; //alta
@@ -77,7 +77,7 @@ $(document).on("click", ".btnEditar", function(){
     
     $(".modal-header").css("background-color", "#007bff");
     $(".modal-header").css("color", "white");
-    $(".modal-title").text("Editar Clases");            
+    $(".modal-title").text("Editar Velas");            
     $("#modalCRUD").modal("show");  
     
 });
@@ -98,13 +98,13 @@ $(document).on("click", ".btnBorrar", function(){
             dataType: "json",
             data: {opcion:opcion, id:id},
             success: function(){
-                tablaClases.row(fila.parents('tr')).remove().draw();
+                tablaVelas.row(fila.parents('tr')).remove().draw();
             }
         });
     }   
 });
     
-$("#formClases").submit(function(e){
+$("#formVelas").submit(function(e){
     e.preventDefault();    
     tipo = $.trim($("#tipo").val());    
     $.ajax({
@@ -116,8 +116,8 @@ $("#formClases").submit(function(e){
             console.log(data);
             id = data[0].id;            
             tipo = data[0].tipo;
-            if(opcion == 1){tablaClases.row.add([id,tipo]).draw();}
-            else{tablaClases.row(fila).data([id,tipo]).draw();}            
+            if(opcion == 1){tablaVelas.row.add([id,tipo]).draw();}
+            else{tablaVelas.row(fila).data([id,tipo]).draw();}            
         }        
     });
     $("#modalCRUD").modal("hide");    

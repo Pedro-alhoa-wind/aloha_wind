@@ -11,27 +11,27 @@ $id = (isset($_POST['id'])) ? $_POST['id'] : '';
 
 switch($opcion){
     case 1: //alta
-        $consulta = "INSERT INTO clases (tipo) VALUES('$tipo') ";			
+        $consulta = "INSERT INTO velas (tipo) VALUES('$tipo') ";			
         $resultado = $conexion->prepare($consulta);
         $resultado->execute(); 
 
-        $consulta = "SELECT id, tipo FROM clases ORDER BY id DESC LIMIT 1";
+        $consulta = "SELECT id, tipo FROM velas ORDER BY id DESC LIMIT 1";
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();
         $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
         break;
     case 2: //modificación
-        $consulta = "UPDATE clases SET tipo='$tipo', WHERE id='$id' ";		
+        $consulta = "UPDATE velas SET tipo='$tipo', WHERE id='$id' ";		
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();        
         
-        $consulta = "SELECT id, tipo FROM clases WHERE id='$id' ";       
+        $consulta = "SELECT id, tipo FROM velas WHERE id='$id' ";       
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();
         $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
         break;        
     case 3://baja
-        $consulta = "DELETE FROM clases WHERE id='$id' ";		
+        $consulta = "DELETE FROM velas WHERE id='$id' ";		
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();                           
         break;        

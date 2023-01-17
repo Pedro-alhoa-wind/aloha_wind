@@ -3,7 +3,7 @@ include_once '/wamp64/www/aloha_wind/pagina_admin/crud/crud_usuario/bd/conexion.
 $objeto = new Conexion();
 $conexion = $objeto->Conectar();
 
-$consulta = "SELECT id, tipo FROM clases";
+$consulta = "SELECT id, tipo FROM velas";
 $resultado = $conexion->prepare($consulta);
 $resultado->execute();
 $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
@@ -50,7 +50,7 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
             <div class="row">
                 <div class="col-lg-12">
                     <div class="table-responsive">        
-                        <table id="tablaClases" class="table table-striped table-bordered table-condensed" style="width:100%">
+                        <table id="tablaVelas" class="table table-striped table-bordered table-condensed" style="width:100%">
                         <thead class="text-center">
                             <tr>
                                 <th>Id</th>
@@ -86,7 +86,7 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
                 </button>
             </div>
-        <form id="formClases">    
+        <form id="formVelas">    
             <div class="modal-body">
                 <div class="form-group">
                 <label for="tipo" class="col-form-label">Tipo:</label>
