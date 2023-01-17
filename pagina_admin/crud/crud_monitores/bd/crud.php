@@ -5,38 +5,38 @@ $conexion = $objeto->Conectar();
 
 // Recepción de los datos enviados mediante POST desde el JS   
 
+$deporte = (isset($_POST['deporte'])) ? $_POST['deporte'] : '';
+$dni = (isset($_POST['dni'])) ? $_POST['dni'] : '';
 $nombre = (isset($_POST['nombre'])) ? $_POST['nombre'] : '';
 $apellido = (isset($_POST['apellido'])) ? $_POST['apellido'] : '';
-$nacionalidad = (isset($_POST['nacionalidad'])) ? $_POST['nacionalidad'] : '';
 $telefono = (isset($_POST['telefono'])) ? $_POST['telefono'] : '';
-$usuario = (isset($_POST['usuario'])) ? $_POST['usuario'] : '';
-$password = (isset($_POST['password'])) ? $_POST['password'] : '';
+$email = (isset($_POST['email'])) ? $_POST['email'] : '';
 $opcion = (isset($_POST['opcion'])) ? $_POST['opcion'] : '';
 $id = (isset($_POST['id'])) ? $_POST['id'] : '';
 
 switch($opcion){
     case 1: //alta
-        $consulta = "INSERT INTO usuario (nombre, apellido, nacionalidad, telefono, usuario, password) VALUES('$nombre', '$apellido', '$nacionalidad', '$telefono', '$usuario', '$password') ";			
+        $consulta = "INSERT INTO monitor (deporte, dni, nombre, apellido, telefono, email) VALUES('$deporte', '$dni', '$nombre', '$apellido', '$telefono', '$email') ";			
         $resultado = $conexion->prepare($consulta);
         $resultado->execute(); 
 
-        $consulta = "SELECT id, nombre, apellido, nacionalidad, telefono, usuario, password FROM usuario ORDER BY id DESC LIMIT 1";
+        $consulta = "SELECT id, deporte, dni, nombre, apellido, telefono, email FROM monitor ORDER BY id DESC LIMIT 1";
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();
         $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
         break;
     case 2: //modificación
-        $consulta = "UPDATE usuario SET nombre='$nombre', apellido='$apellido', nacionalidad='$nacionalidad', telefono='$telefono', usuario='$usuario', password='$password', WHERE id='$id' ";		
+        $consulta = "UPDATE monitor SET deporte='$deporte', dni='$dni, nombre='$nombre', apellido='$apellido', telefono='$telefono', email='$email', WHERE id='$id' ";		
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();        
         
-        $consulta = "SELECT id, nombre, apellido, nacionalidad, telefono, usuario, password FROM usuario WHERE id='$id' ";       
+        $consulta = "SELECT id, deporte, dni, nombre, apellido, telefono, email FROM monitor WHERE id='$id' ";       
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();
         $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
         break;        
     case 3://baja
-        $consulta = "DELETE FROM usuario WHERE id='$id' ";		
+        $consulta = "DELETE FROM monitor WHERE id='$id' ";		
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();                           
         break;        

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    tablaPersonas = $("#tablaPersonas").DataTable({
+    tablaNeopreno = $("#tablaNeopreno").DataTable({
        "columnDefs":[{
         "targets":-1,
         "data":null,
@@ -55,10 +55,10 @@ $(document).ready(function(){
     });
     
 $("#btnNuevo").click(function(){
-    $("#formPersonas").trigger("reset");
+    $("#formNeopreno").trigger("reset");
     $(".modal-header").css("background-color", "#28a745");
     $(".modal-header").css("color", "white");
-    $(".modal-title").text("Nueva Persona");            
+    $(".modal-title").text("Nueva Neopreno");            
     $("#modalCRUD").modal("show");        
     id=null;
     opcion = 1; //alta
@@ -70,24 +70,21 @@ var fila; //capturar la fila para editar o borrar el registro
 $(document).on("click", ".btnEditar", function(){
     fila = $(this).closest("tr");
     id = parseInt(fila.find('td:eq(0)').text());
-    nombre = fila.find('td:eq(1)').text();
-    apellido = fila.find('td:eq(2)').text();
-    nacionalidad = fila.find('td:eq(3)').text();
-    telefono = parseInt(fila.find('td:eq(4)').text());
-    usuario = fila.find('td:eq(5)').text();
-    password = fila.find('td:eq(6)').text();
+    marca = fila.find('td:eq(1)').text();
+    modelo = fila.find('td:eq(2)').text();
+    talla = fila.find('td:eq(3)').text();
+    grosor = fila.find('td:eq(4)').text();
     
-    $("#nombre").val(nombre);
-    $("#apellido").val(apellido);
-    $("#nacionalidad").val(nacionalidad);
-    $("#telefono").val(telefono);
-    $("#usuario").val(usuario);
-    $("#password").val(password);
+    $("#marca").val(marca);
+    $("#modelo").val(modelo);
+    $("#talla").val(talla);
+    $("#grosor").val(grosor);
+
     opcion = 2; //editar
     
     $(".modal-header").css("background-color", "#007bff");
     $(".modal-header").css("color", "white");
-    $(".modal-title").text("Editar Persona");            
+    $(".modal-title").text("Editar Neopreno");            
     $("#modalCRUD").modal("show");  
     
 });
@@ -108,36 +105,32 @@ $(document).on("click", ".btnBorrar", function(){
             dataType: "json",
             data: {opcion:opcion, id:id},
             success: function(){
-                tablaPersonas.row(fila.parents('tr')).remove().draw();
+                tablaNeopreno.row(fila.parents('tr')).remove().draw();
             }
         });
     }   
 });
     
-$("#formPersonas").submit(function(e){
+$("#formNeopreno").submit(function(e){
     e.preventDefault();    
-    nombre = $.trim($("#nombre").val());
-    apellido = $.trim($("#apellido").val());
-    nacionalidad = $.trim($("#nacionalidad").val());
-    telefono = $.trim($("#telefono").val());
-    usuario = $.trim($("#usuario").val());
-    password = $.trim($("#password").val());    
+    marca = $.trim($("#marca").val());
+    modelo = $.trim($("#modelo").val());
+    talla = $.trim($("#talla").val());
+    grosor = $.trim($("#grosor").val());    
     $.ajax({
         url: "bd/crud.php",
         type: "POST",
         dataType: "json",
-        data: {nombre:nombre, apellido:apellido, nacionalidad:nacionalidad, telefono:telefono, usuario:usuario, password:password, id:id, opcion:opcion},
+        data: {marca:marca, modelo:modelo, talla:talla, grosor:grosor, id:id, opcion:opcion},
         success: function(data){  
             console.log(data);
             id = data[0].id;            
-            nombre = data[0].nombre;
-            apellido = data[0].apellido;
-            nacionalidad = data[0].nacionalidad;
-            telefono = data[0].telefono;
-            usuario = data[0].usuario;
-            password = data[0].password;
-            if(opcion == 1){tablaPersonas.row.add([id,nombre,apellido,nacionalidad,telefono,usuario,password]).draw();}
-            else{tablaPersonas.row(fila).data([id,nombre,apellido,nacionalidad,telefono,usuario,password]).draw();}            
+            marca = data[0].marca;
+            modelo = data[0].modelo;
+            talla = data[0].talla;
+            grosor = data[0].grosor;
+            if(opcion == 1){tablaNeopreno.row.add([id,marca,modelo,talla,grosor]).draw();}
+            else{tablaNeopreno.row(fila).data([id,marca,modelo,talla,grosor]).draw();}            
         }        
     });
     $("#modalCRUD").modal("hide");    
