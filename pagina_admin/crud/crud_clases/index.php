@@ -3,7 +3,7 @@ include_once '/wamp64/www/aloha_wind/pagina_admin/crud/crud_usuario/bd/conexion.
 $objeto = new Conexion();
 $conexion = $objeto->Conectar();
 
-$consulta = "SELECT id, nombre, apellido, nacionalidad, telefono, usuario, password FROM usuario";
+$consulta = "SELECT id, tipo FROM clases";
 $resultado = $conexion->prepare($consulta);
 $resultado->execute();
 $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
@@ -50,16 +50,11 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
             <div class="row">
                 <div class="col-lg-12">
                     <div class="table-responsive">        
-                        <table id="tablaPersonas" class="table table-striped table-bordered table-condensed" style="width:100%">
+                        <table id="tablaClases" class="table table-striped table-bordered table-condensed" style="width:100%">
                         <thead class="text-center">
                             <tr>
                                 <th>Id</th>
-                                <th>Nombre</th>
-                                <th>Apellido</th>                                
-                                <th>Nacionalidad</th>
-                                <th>Teléfono</th>
-                                <th>Usuario</th> 
-                                <th>Contraseña</th>  
+                                <th>Tipo</th>  
                                 <th>Acciones</th>
                             </tr>
                         </thead>
@@ -69,12 +64,7 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
                             ?>
                             <tr>
                                 <td><?php echo $dat['id']?></td>
-                                <td><?php echo $dat['nombre']?></td>
-                                <td><?php echo $dat['apellido']?></td>
-                                <td><?php echo $dat['nacionalidad']?></td>
-                                <td><?php echo $dat['telefono']?></td>
-                                <td><?php echo $dat['usuario']?></td>
-                                <td><?php echo $dat['password']?></td>    
+                                <td><?php echo $dat['tipo']?></td>    
                                 <td></td>
                             </tr>
                             <?php
@@ -96,31 +86,11 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
                 </button>
             </div>
-        <form id="formPersonas">    
+        <form id="formClases">    
             <div class="modal-body">
                 <div class="form-group">
-                <label for="nombre" class="col-form-label">Nombre:</label>
-                <input type="text" class="form-control" id="nombre">
-                </div>
-                <div class="form-group">
-                <label for="apellido" class="col-form-label">Apellido:</label>
-                <input type="text" class="form-control" id="apellido">
-                </div>                
-                <div class="form-group">
-                <label for="nacionalidad" class="col-form-label">Nacionalidad:</label>
-                <input type="text" class="form-control" id="nacionalidad">
-                </div>
-                <div class="form-group">
-                <label for="telefono" class="col-form-label">Teléfono:</label>
-                <input type="number" class="form-control" id="telefono">
-                </div>
-                <div class="form-group">
-                <label for="usuario" class="col-form-label">Usuario:</label>
-                <input type="text" class="form-control" id="usuario">
-                </div>
-                <div class="form-group">
-                <label for="password" class="col-form-label">Contraseña:</label>
-                <input type="text" class="form-control" id="password">
+                <label for="tipo" class="col-form-label">Tipo:</label>
+                <input type="text" class="form-control" id="tipo">
                 </div>            
             </div>
             <div class="modal-footer">
