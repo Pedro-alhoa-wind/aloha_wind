@@ -5,38 +5,36 @@ $conexion = $objeto->Conectar();
 
 // Recepción de los datos enviados mediante POST desde el JS   
 
-$nombre = (isset($_POST['nombre'])) ? $_POST['nombre'] : '';
-$apellido = (isset($_POST['apellido'])) ? $_POST['apellido'] : '';
-$nacionalidad = (isset($_POST['nacionalidad'])) ? $_POST['nacionalidad'] : '';
-$telefono = (isset($_POST['telefono'])) ? $_POST['telefono'] : '';
-$usuario = (isset($_POST['usuario'])) ? $_POST['usuario'] : '';
-$password = (isset($_POST['password'])) ? $_POST['password'] : '';
+$marca = (isset($_POST['marca'])) ? $_POST['marca'] : '';
+$modelo = (isset($_POST['modelo'])) ? $_POST['modelo'] : '';
+$talla = (isset($_POST['talla'])) ? $_POST['talla'] : '';
+$grosor = (isset($_POST['grosor'])) ? $_POST['grosor'] : '';
 $opcion = (isset($_POST['opcion'])) ? $_POST['opcion'] : '';
 $id = (isset($_POST['id'])) ? $_POST['id'] : '';
 
 switch($opcion){
     case 1: //alta
-        $consulta = "INSERT INTO usuario (nombre, apellido, nacionalidad, telefono, usuario, password) VALUES('$nombre', '$apellido', '$nacionalidad', '$telefono', '$usuario', '$password') ";			
+        $consulta = "INSERT INTO neopreno (marca, modelo, talla, grosor) VALUES('$marca', '$modelo', '$talla', '$grosor') ";			
         $resultado = $conexion->prepare($consulta);
         $resultado->execute(); 
 
-        $consulta = "SELECT id, nombre, apellido, nacionalidad, telefono, usuario, password FROM usuario ORDER BY id DESC LIMIT 1";
+        $consulta = "SELECT id, marca, modelo, talla, grosor FROM neopreno ORDER BY id DESC LIMIT 1";
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();
         $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
         break;
     case 2: //modificación
-        $consulta = "UPDATE usuario SET nombre='$nombre', apellido='$apellido', nacionalidad='$nacionalidad', telefono='$telefono', usuario='$usuario', password='$password', WHERE id='$id' ";		
+        $consulta = "UPDATE neopreno SET marca='$marca', modelo='$modelo', talla='$talla', grosor='$grosor', WHERE id='$id' ";		
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();        
         
-        $consulta = "SELECT id, nombre, apellido, nacionalidad, telefono, usuario, password FROM usuario WHERE id='$id' ";       
+        $consulta = "SELECT id, marca, modelo, talla, grosor FROM neopreno WHERE id='$id' ";       
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();
         $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
         break;        
     case 3://baja
-        $consulta = "DELETE FROM usuario WHERE id='$id' ";		
+        $consulta = "DELETE FROM neopreno WHERE id='$id' ";		
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();                           
         break;        
