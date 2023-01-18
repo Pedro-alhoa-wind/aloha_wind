@@ -1,5 +1,5 @@
 <?php
-include_once '../bd/conexion.php';
+include_once '/wamp64/www/aloha_wind/pagina_admin/crud/crud_monitores/bd_monitores/conexion.php';
 $objeto = new Conexion();
 $conexion = $objeto->Conectar();
 
@@ -16,27 +16,27 @@ $id = (isset($_POST['id'])) ? $_POST['id'] : '';
 
 switch($opcion){
     case 1: //alta
-        $consulta = "INSERT INTO monitor (deporte, dni, nombre, apellido, telefono, email) VALUES('$deporte', '$dni', '$nombre', '$apellido', '$telefono', '$email') ";			
+        $consulta = "INSERT INTO monitores (deporte, dni, nombre, apellido, telefono, email) VALUES('$deporte', '$dni', '$nombre', '$apellido', '$telefono', '$email') ";			
         $resultado = $conexion->prepare($consulta);
         $resultado->execute(); 
 
-        $consulta = "SELECT id, deporte, dni, nombre, apellido, telefono, email FROM monitor ORDER BY id DESC LIMIT 1";
+        $consulta = "SELECT id, deporte, dni, nombre, apellido, telefono, email FROM monitores ORDER BY id DESC LIMIT 1";
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();
         $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
         break;
     case 2: //modificación
-        $consulta = "UPDATE monitor SET deporte='$deporte', dni='$dni, nombre='$nombre', apellido='$apellido', telefono='$telefono', email='$email', WHERE id='$id' ";		
+        $consulta = "UPDATE monitores SET deporte='$deporte', dni='$dni, nombre='$nombre', apellido='$apellido', telefono='$telefono', email='$email', WHERE id='$id' ";		
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();        
         
-        $consulta = "SELECT id, deporte, dni, nombre, apellido, telefono, email FROM monitor WHERE id='$id' ";       
+        $consulta = "SELECT id, deporte, dni, nombre, apellido, telefono, email FROM monitores WHERE id='$id' ";       
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();
         $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
         break;        
     case 3://baja
-        $consulta = "DELETE FROM monitor WHERE id='$id' ";		
+        $consulta = "DELETE FROM monitores WHERE id='$id' ";		
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();                           
         break;        

@@ -1,9 +1,9 @@
 <?php
-include_once '/wamp64/www/aloha_wind/pagina_admin/crud/crud_usuario/bd/conexion.php';
+include_once '/wamp64/www/aloha_wind/pagina_admin/crud/crud_monitores/bd_monitores/conexion.php';
 $objeto = new Conexion();
 $conexion = $objeto->Conectar();
 
-$consulta = "SELECT id, deporte, dni, nombre, apellido, telefono, email FROM monitor";
+$consulta = "SELECT id, deporte, dni, nombre, apellido, telefono, email FROM monitores";
 $resultado = $conexion->prepare($consulta);
 $resultado->execute();
 $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
@@ -133,12 +133,12 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
 </div>  
       
     <!-- jQuery, Popper.js, Bootstrap JS -->
-    <!-- <script src="jquery/jquery-3.3.1.min.js"></script> -->
-    <script src="/pagina_admin/crud/crud_monitores/jquery/jquery-3.3.1.min.js"></script>
-    <!-- <script src="popper/popper.min.js"></script> -->
-    <script src="/pagina_admin/crud/crud_monitores/popper/popper.min.js"></script>
-    <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
-    <script src="/pagina_admin/crud/crud_monitores/bootstrap/js/bootstrap.min.js"></script>
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+
+    <script src="popper/popper.min.js"></script>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
       
     <!-- datatables JS -->
     <script type="text/javascript" src="datatables/datatables.min.js"></script> 
@@ -152,7 +152,7 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
 
 
     <!-- NUESTRO JS  -->
-    <script type="text/javascript" src="main.js"></script>  
+    <script type="text/javascript" src="main_monitores.js"></script>  
     
     
   </body>

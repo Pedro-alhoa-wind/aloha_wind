@@ -103,7 +103,7 @@ $(document).on("click", ".btnBorrar", function(){
     var respuesta = confirm("¿Está seguro de quieres eliminar el registro: "+id+"?");
     if(respuesta){
         $.ajax({
-            url: "bd/crud.php",
+            url: "../crud_monitores/bd_monitores/crud.php",
             type: "POST",
             dataType: "json",
             data: {opcion:opcion, id:id},
@@ -123,7 +123,7 @@ $("#formMonitor").submit(function(e){
     telefono = $.trim($("#telefono").val());
     email = $.trim($("#email").val());    
     $.ajax({
-        url: "bd/crud.php",
+        url: "../crud_monitores/bd_monitores/crud.php",
         type: "POST",
         dataType: "json",
         data: {deporte:deporte, dni:dni, nombre:nombre, apellido:apellido, telefono:telefono, email:email, id:id, opcion:opcion},
