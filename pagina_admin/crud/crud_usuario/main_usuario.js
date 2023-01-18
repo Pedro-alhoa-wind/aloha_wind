@@ -58,7 +58,7 @@ $("#btnNuevo").click(function(){
     $("#formPersonas").trigger("reset");
     $(".modal-header").css("background-color", "#28a745");
     $(".modal-header").css("color", "white");
-    $(".modal-title").text("Nueva Persona");            
+    $(".modal-title").text("Nueva Usuario");            
     $("#modalCRUD").modal("show");        
     id=null;
     opcion = 1; //alta
@@ -103,7 +103,7 @@ $(document).on("click", ".btnBorrar", function(){
     var respuesta = confirm("¿Está seguro de quieres eliminar el registro: "+id+"?");
     if(respuesta){
         $.ajax({
-            url: "bd/crud.php",
+            url: "../crud_usuario/bd_usuario/crud.php",
             type: "POST",
             dataType: "json",
             data: {opcion:opcion, id:id},
@@ -123,7 +123,7 @@ $("#formPersonas").submit(function(e){
     usuario = $.trim($("#usuario").val());
     password = $.trim($("#password").val());    
     $.ajax({
-        url: "bd/crud.php",
+        url: "../crud_usuario/bd_usuario/crud.php",
         type: "POST",
         dataType: "json",
         data: {nombre:nombre, apellido:apellido, nacionalidad:nacionalidad, telefono:telefono, usuario:usuario, password:password, id:id, opcion:opcion},
