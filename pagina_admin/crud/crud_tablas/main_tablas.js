@@ -58,7 +58,7 @@ $("#btnNuevo").click(function(){
     $("#formTablas").trigger("reset");
     $(".modal-header").css("background-color", "#28a745");
     $(".modal-header").css("color", "white");
-    $(".modal-title").text("Nueva Persona");            
+    $(".modal-title").text("Nueva Tabla");            
     $("#modalCRUD").modal("show");        
     id=null;
     opcion = 1; //alta
@@ -82,7 +82,7 @@ $(document).on("click", ".btnEditar", function(){
     
     $(".modal-header").css("background-color", "#007bff");
     $(".modal-header").css("color", "white");
-    $(".modal-title").text("Editar Persona");            
+    $(".modal-title").text("Editar Tabla");            
     $("#modalCRUD").modal("show");  
     
 });
@@ -98,7 +98,7 @@ $(document).on("click", ".btnBorrar", function(){
     var respuesta = confirm("¿Está seguro de quieres eliminar el registro: "+id+"?");
     if(respuesta){
         $.ajax({
-            url: "bd/crud.php",
+            url: "../crud_tablas/bd_tablas/crud.php",
             type: "POST",
             dataType: "json",
             data: {opcion:opcion, id:id},
@@ -109,13 +109,13 @@ $(document).on("click", ".btnBorrar", function(){
     }   
 });
     
-$("#formtablas").submit(function(e){
+$("#formTablas").submit(function(e){
     e.preventDefault();    
     deporte = $.trim($("#deporte").val());
     marca = $.trim($("#marca").val());
     tipo = $.trim($("#tipo").val());    
     $.ajax({
-        url: "bd/crud.php",
+        url: "../crud_tablas/bd_tablas/crud.php",
         type: "POST",
         dataType: "json",
         data: {deporte:deporte, marca:marca, tipo:tipo, id:id, opcion:opcion},
