@@ -1,5 +1,5 @@
 <?php
-include_once '/wamp64/www/aloha_wind/pagina_admin/crud/crud_usuario/bd/conexion.php';
+include_once '/wamp64/www/aloha_wind/pagina_admin/crud/crud_neopreno/bd_neopreno/conexion.php';
 $objeto = new Conexion();
 $conexion = $objeto->Conectar();
 
@@ -137,7 +137,7 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
 
 
     <!-- NUESTRO JS  -->
-    <script type="text/javascript" src="main.js"></script>  
+    <script type="text/javascript" src="main_neopreno.js"></script>  
     
     
   </body>
