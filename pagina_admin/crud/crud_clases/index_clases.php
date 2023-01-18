@@ -1,9 +1,9 @@
 <?php
-include_once '/wamp64/www/aloha_wind/pagina_admin/crud/crud_usuario/bd/conexion.php';
+include_once '/wamp64/www/aloha_wind/pagina_admin/crud/crud_clases/bd_clases/conexion.php';
 $objeto = new Conexion();
 $conexion = $objeto->Conectar();
 
-$consulta = "SELECT id, tipo FROM clases";
+$consulta = "SELECT id, tipo FROM tipo_clases";
 $resultado = $conexion->prepare($consulta);
 $resultado->execute();
 $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
@@ -119,7 +119,7 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
 
 
     <!-- NUESTRO JS  -->
-    <script type="text/javascript" src="main.js"></script>  
+    <script type="text/javascript" src="main_clases.js"></script>  
     
     
   </body>
