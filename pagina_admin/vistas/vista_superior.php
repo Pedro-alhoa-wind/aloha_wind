@@ -59,7 +59,7 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                <a class="nav-link collapsed" href="/pagina_admin/index_usuario.php" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-user-alt" style="font-size:24px"></i>
                     <span>Clientes</span>
@@ -70,7 +70,7 @@
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                <a class="nav-link collapsed" href="/pagina_admin/index_monitores.php" data-toggle="collapse" data-target="#collapseUtilities"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="far fa-id-badge" style="font-size:24px"></i>
                     <span>Monitores</span>
@@ -86,21 +86,21 @@
             </div>
 
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="/pagina_admin/index_tablas.php">
                     <i class="fas fa-snowboarding" style="font-size:24px"></i>
                     <span>Tablas</span></a>
             </li>
 
             
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="/pagina_admin/index_neopreno.php">
                     <i class="fas fa-male" style="font-size:24px"></i>
                     <span>Neoprenos</span></a>
             </li>
 
             
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="/pagina_admin/index_velas.php">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Velas</span></a>
             </li>
@@ -108,7 +108,7 @@
             <hr class="sidebar-divider">
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                <a class="nav-link collapsed" href="/pagina_admin/index_clases.php" data-toggle="collapse" data-target="#collapseUtilities"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-chalkboard-teacher" style="font-size:24px"></i>
                     <span>Tipo de clases</span>
