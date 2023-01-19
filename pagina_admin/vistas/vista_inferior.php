@@ -62,6 +62,11 @@
     <script src="vendor/datatables/Buttons-2.3.3/js/buttons.html5.min.js"></script>
      
     <script type="text/javascript" src="/pagina_admin/main/main_usuario.js"></script>
+    <script type="text/javascript" src="/pagina_admin/main/main_tablas.js"></script>
+    <script type="text/javascript" src="/pagina_admin/main/main_monitores.js"></script>
+    <script type="text/javascript" src="/pagina_admin/main/main_velas.js"></script>
+    <script type="text/javascript" src="/pagina_admin/main/main_neopreno.js"></script>
+    <script type="text/javascript" src="/pagina_admin/main/main_clases.js"></script>
 
 </body>
 
