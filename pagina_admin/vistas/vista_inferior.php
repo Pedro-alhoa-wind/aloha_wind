@@ -41,6 +41,13 @@
         </div>
     </div>
 
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+
+
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
