@@ -4,7 +4,7 @@
 <div class="container">
 
 
-    <h1>ALHOA-WIND</h1>
+    <h1>TABLAS</h1>
 
 <?php
 include_once '/wamp64/www/aloha_wind/pagina_admin/bd/bd_tablas/conexion.php';

@@ -54,24 +54,26 @@
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Cliente
+                Clientes
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="/pagina_admin/index_usuario.php" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-user-alt" style="font-size:24px"></i>
+                <a class="nav-link" href="/pagina_admin/index_usuario.php">
+                    <i class="fas fa-user-alt"></i>
                     <span>Clientes</span>
                 </a>
             </li>
 
             <hr class="sidebar-divider">
 
+            <div class="sidebar-heading">
+                Monitores
+            </div>
+
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="/pagina_admin/index_monitores.php" data-toggle="collapse" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
+                <a class="nav-link" href="/pagina_admin/index_monitores.php">
                     <i class="far fa-id-badge" style="font-size:24px"></i>
                     <span>Monitores</span>
                 </a>
@@ -107,10 +109,14 @@
 
             <hr class="sidebar-divider">
 
+
+            <div class="sidebar-heading">
+                Tipo de clases
+            </div>
+
             <li class="nav-item">
-                <a class="nav-link collapsed" href="/pagina_admin/index_clases.php" data-toggle="collapse" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-chalkboard-teacher" style="font-size:24px"></i>
+                <a class="nav-link" href="/pagina_admin/index_clases.php">
+                    <i class="fas fa-chalkboard-teacher"></i>
                     <span>Tipo de clases</span>
                 </a>
             </li>

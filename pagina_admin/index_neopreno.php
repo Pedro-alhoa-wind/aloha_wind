@@ -4,7 +4,7 @@
 <div class="container">
 
 
-    <h1>ALHOA-WIND</h1>
+    <h1>NEOPRENOS</h1>
 
 
     <?php
