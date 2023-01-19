@@ -22,6 +22,8 @@
     <link rel="stylesheet" type="text/css" href="vendor/datatables/datatables.min.css"/>
     <!--datables bootstrap 4 CSS-->  
     <link rel="stylesheet"  type="text/css" href="vendor/datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css"> 
+    <!-- FUENTE -->
+    <script src="https://kit.fontawesome.com/d3532511de.js" crossorigin="anonymous"></script>
 
 </head>
 

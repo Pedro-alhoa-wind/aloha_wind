@@ -52,9 +52,16 @@
     <script src="js/sb-admin-2.min.js"></script>
 
      <!-- datatables JS -->
-     <script type="text/javascript" src="vendor/datatables/datatables.min.js"></script>    
+     <script type="text/javascript" src="vendor/datatables/datatables.min.js"></script> 
      
-     <script type="text/javascript" src="main_usuario.js"></script>
+     <!-- BOTONES DATATABLES -->
+    <script src="vendor/datatables/Buttons-2.3.3/js/dataTables.buttons.min.js"></script>
+    <script src="vendor/datatables/JSZip-2.5.0/jszip.min.js"></script>
+    <script src="vendor/datatables/pdfmake-0.1.36/pdfmake.min.js"></script>
+    <script src="vendor/datatables/pdfmake-0.1.36/vfs_fonts.js"></script>
+    <script src="vendor/datatables/Buttons-2.3.3/js/buttons.html5.min.js"></script>
+     
+    <script type="text/javascript" src="/pagina_admin/main/main_usuario.js"></script>
 
 </body>
 
