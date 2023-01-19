@@ -52,17 +52,23 @@
 
 
     <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="vendor/jquery/jquery.min.js"></script> -->
+    <script src="/pagina_admin/vendor/jquery/jquery.min.js"></script>
+    
+    <!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+    <script src="/pagina_admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- <script src="vendor/jquery-easing/jquery.easing.min.js"></script> -->
+    <script src="/pagina_admin/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+    <!-- <script src="js/sb-admin-2.min.js"></script> -->
+    <script src="/pagina_admin/js/sb-admin-2.min.js"></script>
 
      <!-- datatables JS -->
-     <script type="text/javascript" src="vendor/datatables/datatables.min.js"></script> 
+     <!-- <script type="text/javascript" src="vendor/datatables/datatables.min.js"></script>  -->
+     <script src="/pagina_admin/vendor/datatables/datatables.min.js" type="text/javascript"></script>
      
      <!-- BOTONES DATATABLES -->
     <script src="vendor/datatables/Buttons-2.3.3/js/dataTables.buttons.min.js"></script>

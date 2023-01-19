@@ -93,7 +93,7 @@ $(document).on("click", ".btnBorrar", function(){
     var respuesta = confirm("¿Está seguro de quieres eliminar el registro: "+id+"?");
     if(respuesta){
         $.ajax({
-            url: "../crud_clases/bd_clases/crud.php",
+            url: "/pagina_admin/bd/bd_clases/crud.php",
             type: "POST",
             dataType: "json",
             data: {opcion:opcion, id:id},
@@ -108,7 +108,7 @@ $("#formClases").submit(function(e){
     e.preventDefault();    
     tipo = $.trim($("#tipo").val());    
     $.ajax({
-        url: "../crud_clases/bd_clases/crud.php",
+        url: "/pagina_admin/bd/bd_clases/crud.php",
         type: "POST",
         dataType: "json",
         data: {tipo:tipo, id:id, opcion:opcion},
