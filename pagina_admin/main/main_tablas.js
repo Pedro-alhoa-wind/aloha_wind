@@ -98,7 +98,7 @@ $(document).on("click", ".btnBorrar", function(){
     var respuesta = confirm("¿Está seguro de quieres eliminar el registro: "+id+"?");
     if(respuesta){
         $.ajax({
-            url: "../crud_tablas/bd_tablas/crud.php",
+            url: "/pagina_admin/bd/bd_tablas/crud.php",
             type: "POST",
             dataType: "json",
             data: {opcion:opcion, id:id},
@@ -115,7 +115,7 @@ $("#formTablas").submit(function(e){
     marca = $.trim($("#marca").val());
     tipo = $.trim($("#tipo").val());    
     $.ajax({
-        url: "../crud_tablas/bd_tablas/crud.php",
+        url: "/pagina_admin/bd/bd_tablas/crud.php",
         type: "POST",
         dataType: "json",
         data: {deporte:deporte, marca:marca, tipo:tipo, id:id, opcion:opcion},
