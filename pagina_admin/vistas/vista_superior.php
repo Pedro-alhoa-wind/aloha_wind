@@ -11,17 +11,17 @@
 
     <title>Alhoa-Wind</title>
 
-    
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <link href="/pagina_admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="/pagina_admin/css/sb-admin-2.min.css" rel="stylesheet">
 
     <!-- CSS datables  -->
 
-    <link rel="stylesheet" type="text/css" href="vendor/datatables/datatables.min.css"/>
-    <!--datables bootstrap 4 CSS-->  
-    <link rel="stylesheet"  type="text/css" href="vendor/datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css"> 
+    <link rel="stylesheet" type="text/css" href="/pagina_admin/vendor/datatables/datatables.min.css"/>
+    <!--datables bootstrap 4 CSS-->
+    <link rel="stylesheet"  type="text/css" href="/pagina_admin/vendor/datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css">
     <!-- FUENTE -->
     <script src="https://kit.fontawesome.com/d3532511de.js" crossorigin="anonymous"></script>
 
@@ -34,7 +34,7 @@
 
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
                 <div class="sidebar-brand-icon rotate-n-15">
-                    
+
                 </div>
                 <div class="sidebar-brand-text mx-3">Alhoa-Wind</div>
             </a>
@@ -79,10 +79,10 @@
                 </a>
             </li>
 
-            
+
             <hr class="sidebar-divider">
 
-            
+
             <div class="sidebar-heading">
                 Materiales
             </div>
@@ -93,14 +93,14 @@
                     <span>Tablas</span></a>
             </li>
 
-            
+
             <li class="nav-item">
                 <a class="nav-link" href="/pagina_admin/index_neopreno.php">
                     <i class="fas fa-male" style="font-size:24px"></i>
                     <span>Neoprenos</span></a>
             </li>
 
-            
+
             <li class="nav-item">
                 <a class="nav-link" href="/pagina_admin/index_velas.php">
                     <i class="fas fa-fw fa-table"></i>
@@ -157,8 +157,8 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-search fa-fw"></i>
                             </a>
-                            <!-- Dropdown - Messages -->
-                            <!-- <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                             <!-- Dropdown - Messages -->
+                             <!-- <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
                                 aria-labelledby="searchDropdown">
                                 <form class="form-inline mr-auto w-100 navbar-search">
                                     <div class="input-group">
@@ -179,7 +179,7 @@
 
                         <!-- Informacion del administrador -->
                         <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                            <a class="nav-link dropdown-toggle" href="/pagina_admin/index.php" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Administrador</span>
                                 <img class="img-profile rounded-circle"
@@ -206,4 +206,3 @@
                 <!-- End of Topbar -->
 
 
-            
