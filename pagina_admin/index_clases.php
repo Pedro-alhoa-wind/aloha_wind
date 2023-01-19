@@ -80,7 +80,7 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
                     </div>
                 </div>
             </div>  
-
+    </div>
 
 <!-- FIN CRUD -->
 <?php require_once "/wamp64/www/aloha_wind/pagina_admin/vistas/vista_inferior.php"?>

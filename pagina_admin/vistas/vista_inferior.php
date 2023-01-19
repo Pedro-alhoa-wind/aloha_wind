@@ -42,9 +42,12 @@
     </div>
 
     <!-- jQuery, Popper.js, Bootstrap JS -->
-    <script src="vendor/jquery/jquery-3.3.1.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- <script src="/libls/bootstrap/jquery/jquery-3.3.1.min.js"></script> -->
+    <script src="/libls/bootstrap/jquery/jquery-3.3.1.min.js"></script>
+    <!-- <script src="popper/popper.min.js"></script> -->
+    <script src="/libls/bootstrap/popper/popper.min.js"></script>
+    <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="/libls/bootstrap/js/bootstrap.min.js"></script>
 
 
 
