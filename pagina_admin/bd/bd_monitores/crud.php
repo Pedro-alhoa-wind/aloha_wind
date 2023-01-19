@@ -1,5 +1,5 @@
 <?php
-include_once '/wamp64/www/aloha_wind/pagina_admin/crud/crud_monitores/bd_monitores/conexion.php';
+include_once '/wamp64/www/aloha_wind/pagina_admin/bd/bd_monitores/conexion.php';
 $objeto = new Conexion();
 $conexion = $objeto->Conectar();
 
