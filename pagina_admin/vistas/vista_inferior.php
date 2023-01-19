@@ -43,11 +43,14 @@
 
     <!-- jQuery, Popper.js, Bootstrap JS -->
     <!-- <script src="/libls/bootstrap/jquery/jquery-3.3.1.min.js"></script> -->
-    <script src="/libls/bootstrap/jquery/jquery-3.3.1.min.js"></script>
+    <!-- <script src="/libls/bootstrap/jquery/jquery-3.3.1.min.js"></script> -->
+    <script src="/pagina_admin/vendor/jquery/jquery-3.3.1.min.js"></script>
     <!-- <script src="popper/popper.min.js"></script> -->
-    <script src="/libls/bootstrap/popper/popper.min.js"></script>
+    <!-- <script src="/libls/bootstrap/popper/popper.min.js"></script> -->
+    <script src="/pagina_admin/vendor/popper/popper.min.js"></script>
     <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
-    <script src="/libls/bootstrap/js/bootstrap.min.js"></script>
+    <!-- <script src="/libls/bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="/pagina_admin/vendor/bootstrap/js/bootstrap.min.js"></script>
 
 
 
@@ -68,7 +71,7 @@
 
      <!-- datatables JS -->
      <!-- <script type="text/javascript" src="vendor/datatables/datatables.min.js"></script>  -->
-     <script src="/pagina_admin/vendor/datatables/datatables.min.js" type="text/javascript"></script>
+     <script  type="text/javascript" src="/pagina_admin/vendor/datatables/datatables.min.js"></script>
      
      <!-- BOTONES DATATABLES -->
     <script src="vendor/datatables/Buttons-2.3.3/js/dataTables.buttons.min.js"></script>
