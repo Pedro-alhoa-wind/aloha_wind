@@ -100,7 +100,7 @@ $(document).on("click", ".btnBorrar", function(){
     var respuesta = confirm("¿Está seguro de quieres eliminar el registro: "+id+"?");
     if(respuesta){
         $.ajax({
-            url: "../crud_neopreno/bd_neopreno/crud.php",
+            url: "/pagina_admin/bd/bd_neopreno/crud.php",
             type: "POST",
             dataType: "json",
             data: {opcion:opcion, id:id},
@@ -118,7 +118,7 @@ $("#formNeopreno").submit(function(e){
     talla = $.trim($("#talla").val());
     grosor = $.trim($("#grosor").val());    
     $.ajax({
-        url: "../crud_neopreno/bd_neopreno/crud.php",
+        url: "/pagina_admin/bd/bd_neopreno/crud.php",
         type: "POST",
         dataType: "json",
         data: {marca:marca, modelo:modelo, talla:talla, grosor:grosor, id:id, opcion:opcion},
