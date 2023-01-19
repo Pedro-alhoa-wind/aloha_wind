@@ -58,7 +58,7 @@ $("#btnNuevo").click(function(){
     $("#formClases").trigger("reset");
     $(".modal-header").css("background-color", "#28a745");
     $(".modal-header").css("color", "white");
-    $(".modal-title").text("Nueva Persona");            
+    $(".modal-title").text("Nueva Clase");            
     $("#modalCRUD").modal("show");        
     id=null;
     opcion = 1; //alta
@@ -77,7 +77,7 @@ $(document).on("click", ".btnEditar", function(){
     
     $(".modal-header").css("background-color", "#007bff");
     $(".modal-header").css("color", "white");
-    $(".modal-title").text("Editar Clases");            
+    $(".modal-title").text("Editar Clase");            
     $("#modalCRUD").modal("show");  
     
 });

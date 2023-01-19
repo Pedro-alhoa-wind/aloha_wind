@@ -58,7 +58,7 @@ $("#btnNuevo").click(function(){
     $("#formVelas").trigger("reset");
     $(".modal-header").css("background-color", "#28a745");
     $(".modal-header").css("color", "white");
-    $(".modal-title").text("Nueva Velas");            
+    $(".modal-title").text("Nueva Vela");            
     $("#modalCRUD").modal("show");        
     id=null;
     opcion = 1; //alta
@@ -77,7 +77,7 @@ $(document).on("click", ".btnEditar", function(){
     
     $(".modal-header").css("background-color", "#007bff");
     $(".modal-header").css("color", "white");
-    $(".modal-title").text("Editar Velas");            
+    $(".modal-title").text("Editar Vela");            
     $("#modalCRUD").modal("show");  
     
 });
