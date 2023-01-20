@@ -52,6 +52,8 @@
     <!-- <script src="/libls/bootstrap/js/bootstrap.min.js"></script> -->
     <script src="/pagina_admin/vendor/bootstrap/js/bootstrap.min.js"></script>
 
+    
+
 
 
     <!-- Bootstrap core JavaScript-->
