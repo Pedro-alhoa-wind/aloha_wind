@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Alhoa-Wind</title>
+    <title>Aloha-Wind</title>
 
 
     <link href="/pagina_admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -36,7 +36,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
 
                 </div>
-                <div class="sidebar-brand-text mx-3">Alhoa-Wind</div>
+                <div class="sidebar-brand-text mx-3">Aloha-Wind</div>
             </a>
 
             <!-- Divider -->
