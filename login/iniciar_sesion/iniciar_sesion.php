@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap CSS -->
-    <link href="/libls/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/libls/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/libls/bootstrap/jquery/jquery-3.6.1.min.js">
 
     <!--Esta es mi carpeta de estilo-->
@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Quicksand:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/login/iniciar_sesion/iniciar_sesion.css">
+    <link rel="stylesheet" href="/libls/sweetalert2/sweetalert2.min.css">
     
 
     <title>Alhoa-Wind</title>
@@ -65,6 +66,12 @@
                 </div>
         </div>
     </div>
+
+
+    <script src="/libls/bootstrap/jquery/jquery-3.3.1.min.js"></script>
     <script src="/libls/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/libls/bootstrap/popper/popper.min.js"></script>
+    <script src="/libls/sweetalert2/sweetalert2.all.min.js"></script>
+    <script src="/login/iniciar_sesion/codigo_sesion.js"></script>
 </body>
 </html>
