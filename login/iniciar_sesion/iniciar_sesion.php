@@ -55,7 +55,7 @@
 
                             <div class="text-center">
 
-                                <button type="submit" class="btn btn-primary btn-lg mb-3">Entrar</button>
+                                <input type="submit" name="submit" class="btn btn-primary btn-lg mb-3" value="Entrar">
 
                             </div><br>
 
