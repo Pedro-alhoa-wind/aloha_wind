@@ -24,7 +24,7 @@ switch($opcion){
         $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
         break;
     case 2: //modificación
-        $consulta = "UPDATE neopreno SET marca='$marca', modelo='$modelo', talla='$talla', grosor='$grosor', WHERE id='$id' ";		
+        $consulta = "UPDATE neopreno SET marca='$marca', modelo='$modelo', talla='$talla', grosor='$grosor' WHERE id='$id' ";		
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();        
         
