@@ -28,7 +28,7 @@
                 <div class="d-flex justify-content-between align-items-center mb-2">
                     <div class="">
                         <img src="/assets/imagenes/logo_aloha_wind.png" alt="logo" style="height: 7rem;">
-                        <a href="/index.html"></a>
+                        <a href="/index.php"></a>
                     </div>
                 </div>
             </div>
