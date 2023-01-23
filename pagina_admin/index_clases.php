@@ -1,4 +1,4 @@
-<?php require_once "/wamp64/www/aloha_wind_copia_2/pagina_admin/vistas/vista_superior.php"?>
+<?php require_once "/wamp64/www/aloha_wind/pagina_admin/vistas/vista_superior.php"?>
 
 <!-- INICIO CRUD -->
 <div class="container">
@@ -6,7 +6,7 @@
     <h1>CLASES</h1>
 
     <?php
-include_once '/wamp64/www/aloha_wind_copia_2/pagina_admin/bd/bd_clases/conexion.php';
+include_once '/wamp64/www/aloha_wind/pagina_admin/bd/bd_clases/conexion.php';
 $objeto = new Conexion();
 $conexion = $objeto->Conectar();
 
@@ -83,4 +83,4 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
     </div>
 
 <!-- FIN CRUD -->
-<?php require_once "/wamp64/www/aloha_wind_copia_2/pagina_admin/vistas/vista_inferior.php"?>
+<?php require_once "/wamp64/www/aloha_wind/pagina_admin/vistas/vista_inferior.php"?>
