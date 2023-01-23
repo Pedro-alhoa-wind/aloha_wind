@@ -41,15 +41,15 @@
         <div class="row justify-content-center">
                 <div class="col-6">
                     <p class="text-center fs-2 fst-italic fw-bolder" id="iniciarSesion">Bienvenido</p>
-                    <form action="/login/validar.php" method="post">
+                    <form action="" id="formLogin" method="post">
                     
-                            <div class="form-floating mb-4">
-                                <input type="text" name="usuario" class="form-control" id="floatingInput" placeholder="usuario" required>
+                            <div class="form-floating mb-4" data-validate="Usuario incorrecto" >
+                                <input type="text" name="usuario" class="form-control" id="usuario" placeholder="usuario">
                                 <label for="floatingInput">Usuario</label>
                             </div>
 
-                            <div class="form-floating mb-5">
-                                <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+                            <div class="form-floating mb-5" data-validate="Password incorrecto">
+                                <input type="password" name="password" class="form-control" id="password" placeholder="Password">
                                 <label for="floatingPassword">Password</label>
                             </div>
 
