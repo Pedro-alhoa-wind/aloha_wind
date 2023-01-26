@@ -31,7 +31,11 @@
           </nav>
           <div class="content">
             <h1 style="font-size: 10vW">Aloha-Wind</h1>
+<<<<<<< HEAD:index.html
             <a href="/login/iniciar_sesion.php"> Comenzar </a>
+=======
+            <a href="/login/iniciar_sesion/iniciar_sesion.php"> Comenzar </a>
+>>>>>>> 68c101d36949fb2962aeecf5492186182e9a0095:index.php
           </div>
 
         </div>

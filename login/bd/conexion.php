@@ -13,8 +13,12 @@ class Conexion{
             die("El error de Conexión es: ". $e->getMessage());
         }
     }
+<<<<<<< HEAD
 }
 
 
 
 ?>
+=======
+}
+>>>>>>> 68c101d36949fb2962aeecf5492186182e9a0095
