@@ -4,7 +4,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright © 2022 Alhoa-Wind by Pedro Sánchez Palomino</span>
+                        <span>Copyright © 2022 Aloha-Wind by Pedro Sánchez Palomino</span>
                     </div>
                 </div>
             </footer>
@@ -44,13 +44,16 @@
     <!-- jQuery, Popper.js, Bootstrap JS -->
     <!-- <script src="/libls/bootstrap/jquery/jquery-3.3.1.min.js"></script> -->
     <!-- <script src="/libls/bootstrap/jquery/jquery-3.3.1.min.js"></script> -->
-    <script src="/pagina_admin/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <!-- <script src="/pagina_admin/vendor/jquery/jquery-3.3.1.min.js"></script> -->
+    <script src="/libls/jquery/jquery-3.6.3.min.js"></script>
     <!-- <script src="popper/popper.min.js"></script> -->
     <!-- <script src="/libls/bootstrap/popper/popper.min.js"></script> -->
-    <script src="/pagina_admin/vendor/popper/popper.min.js"></script>
+    <!-- <script src="/pagina_admin/vendor/popper/popper.min.js"></script> -->
+    <script src="/libls/popper/popper.min.js"></script>
     <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
     <!-- <script src="/libls/bootstrap/js/bootstrap.min.js"></script> -->
-    <script src="/pagina_admin/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- <script src="/pagina_admin/vendor/bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="/libls/bootstrap/js/bootstrap.min.js"></script>
 
 
 

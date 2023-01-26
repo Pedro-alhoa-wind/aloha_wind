@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Quicksand:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/login/registrar/registrar.css">
+    <link rel="stylesheet" href="/registrar/registrar.css">
     
 
     <title>Alhoa-Wind</title>
@@ -44,7 +44,7 @@
         <div class="row my-3">
             <div class="">
                 <p class="fs-2 text-center" id="registrate">REGISTRATE</p>
-                <form name="form" action="/login/registrar/registro.php" method="POST">
+                <form name="form" action="/registrar/registro.php" method="POST">
                     <div class="row">
                         <div class="my-3 mx-5 input-group">  
                             <div class="col-md-4">
@@ -62,17 +62,13 @@
                 
                     <div class="row">
                         <div class="my-3 mx-5 input-group">  
-                            <div class="col-md-2">
-                                <label for="fechaNacUsuario" class="form-label">Fecha Nacimiento</label>
-                                <input id="fechaNacUsuario" class="form-control" name="fecha_nacimiento" type="text" placeholder="Escribe tu fecha nacim...." required>
-                            </div>
-                            <div class="col-1"></div>
-                            <div class="col-md-3">
+                        
+                            <div class="col-md-4">
                                 <label for="nacionalidadUsuario" class="form-label">Nacionalidad</label>
-                                <input id="nacionalidadUsuario" class="form-control" name="nacionalidad" type="text" placeholder="Escribe tu apellidos...." required>
+                                <input id="nacionalidadUsuario" class="form-control" name="nacionalidad" type="text" placeholder="Escribe tu nacionalidad...." required>
                             </div>
-                            <div class="col-1"></div>
-                            <div class="col-md-3">
+                            <div class="col-1"></div> 
+                            <div class="col-md-5">
                                 <label for="telefonoUsuario" class="form-label">Teléfono</label>
                                 <input id="telefonoUsuario" class="form-control" name="telefono" type="text" placeholder="Escribe tu teléfono...." required>
                             </div>
@@ -82,14 +78,14 @@
 
                     <div class="row">
                         <div class="my-3 mx-5 input-group">  
-                            <div class="col-md-3">
+                            <div class="col-md-4">
                                 <label for="usuario" class="form-label">Nombre usuario</label>
                                 <input id="usuario" class="form-control" name="usuario" type="text" placeholder="Escribe tu nombre Usuario...." required>
                             </div>
                             <div class="col-1"></div>
-                            <div class="mb-3">
+                            <div class="col-mb-5">
                                 <label for="password" class="form-label">Password</label>
-                                <input type="password" class="form-control" name="password" id="password" placeholder="Escribe tu password..." required>
+                                <input id="password" class="form-control" name="password" type="password" placeholder="Escribe tu password..." required>
                             </div>
                             
                         </div>
@@ -124,15 +120,15 @@
 
         </div>
     </div>
-     <!-- Pie -->
+    <!-- Pie -->
 
-     <div class="container">
+    <div class="container">
         <footer class="py-3 my-4">
           <ul class="nav justify-content-center border-bottom pb-3 mb-3">
           </ul>
           <p class="text-center text-muted fs-5 fst-italic">Copyright © 2022 Alhoa-Wind by Pedro Sánchez Palomino</p>
         </footer>
-      </div>
+    </div>
 
 
     <script src="/libls/bootstrap/js/bootstrap.min.js"></script>    

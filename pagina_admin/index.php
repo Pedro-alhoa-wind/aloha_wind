@@ -4,7 +4,7 @@
 <div class="container">
 
 
-    <h1>ALHOA-WIND</h1>
+    <h1>ALOHA-WIND</h1>
 
 
 </div>
