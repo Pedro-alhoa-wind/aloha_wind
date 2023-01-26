@@ -23,7 +23,7 @@ switch($opcion){
         $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
         break;
     case 2: //modificación
-        $consulta = "UPDATE tablas SET deporte='$deporte', marca='$marca', tipo='$tipo', WHERE id='$id' ";		
+        $consulta = "UPDATE tablas SET deporte='$deporte', marca='$marca', tipo='$tipo' WHERE id='$id' ";		
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();        
         

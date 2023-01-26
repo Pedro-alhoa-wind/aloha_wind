@@ -21,7 +21,7 @@ switch($opcion){
         $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
         break;
     case 2: //modificación
-        $consulta = "UPDATE velas SET tipo='$tipo', WHERE id='$id' ";		
+        $consulta = "UPDATE velas SET tipo='$tipo' WHERE id='$id' ";		
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();        
         
