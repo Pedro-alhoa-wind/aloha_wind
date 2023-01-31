@@ -45,7 +45,6 @@
     <!-- <script src="/libls/bootstrap/jquery/jquery-3.3.1.min.js"></script> -->
     <!-- <script src="/libls/bootstrap/jquery/jquery-3.3.1.min.js"></script> -->
     <!-- <script src="/pagina_admin/vendor/jquery/jquery-3.3.1.min.js"></script> -->
-<<<<<<< HEAD
     <script src="/libls/jquery/jquery-3.6.3.min.js"></script>
     <!-- <script src="popper/popper.min.js"></script> -->
     <!-- <script src="/libls/bootstrap/popper/popper.min.js"></script> -->
@@ -55,26 +54,6 @@
     <!-- <script src="/libls/bootstrap/js/bootstrap.min.js"></script> -->
     <!-- <script src="/pagina_admin/vendor/bootstrap/js/bootstrap.min.js"></script> -->
     <script src="/libls/bootstrap/js/bootstrap.min.js"></script>
-=======
-    <script src="/pagina_admin/crud/crud_clases/jquery/jquery-3.3.1.min.js"></script>
-
-
-
-
-    <!-- <script src="popper/popper.min.js"></script> -->
-    <!-- <script src="/libls/bootstrap/popper/popper.min.js"></script> -->
-    <!-- <script src="/pagina_admin/vendor/popper/popper.min.js"></script> -->
-    <script src="/pagina_admin/crud/crud_clases/popper/popper.min.js"></script>
-
-
-
-    <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
-    <!-- <script src="/libls/bootstrap/js/bootstrap.min.js"></script> -->
-    <!-- <script src="/pagina_admin/vendor/bootstrap/js/bootstrap.min.js"></script> -->
-    <script src="/pagina_admin/crud/crud_clases/bootstrap/js/bootstrap.min.js"></script>
-
-    
->>>>>>> 68c101d36949fb2962aeecf5492186182e9a0095
 
 
 
