@@ -5,7 +5,7 @@ $('#formLogin').submit(function(e){
     
     if(usuario.length == "" || password == ""){
         Swal.fire({
-            type:'warning',
+            icon:'error',
             title:'Debe ingresar un usuario y/o password',
         });
         return false; 
@@ -18,12 +18,12 @@ $('#formLogin').submit(function(e){
              success:function(data){               
                  if(data == "null"){
                      Swal.fire({
-                         type:'error',
+                         icon:'error',
                          title:'Usuario y/o password incorrecta',
                      });
                  }else{
                      Swal.fire({
-                         type:'success',
+                         icon:'success',
                          title:'¡Conexión exitosa!',
                          confirmButtonColor:'#3085d6',
                          confirmButtonText:'Ingresar'
