@@ -42,17 +42,8 @@
     </div>
 
     <!-- jQuery, Popper.js, Bootstrap JS -->
-    <!-- <script src="/libls/bootstrap/jquery/jquery-3.3.1.min.js"></script> -->
-    <!-- <script src="/libls/bootstrap/jquery/jquery-3.3.1.min.js"></script> -->
-    <!-- <script src="/pagina_admin/vendor/jquery/jquery-3.3.1.min.js"></script> -->
     <script src="/libls/jquery/jquery-3.6.3.min.js"></script>
-    <!-- <script src="popper/popper.min.js"></script> -->
-    <!-- <script src="/libls/bootstrap/popper/popper.min.js"></script> -->
-    <!-- <script src="/pagina_admin/vendor/popper/popper.min.js"></script> -->
     <script src="/libls/popper/popper.min.js"></script>
-    <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
-    <!-- <script src="/libls/bootstrap/js/bootstrap.min.js"></script> -->
-    <!-- <script src="/pagina_admin/vendor/bootstrap/js/bootstrap.min.js"></script> -->
     <script src="/libls/bootstrap/js/bootstrap.min.js"></script>
 
 
