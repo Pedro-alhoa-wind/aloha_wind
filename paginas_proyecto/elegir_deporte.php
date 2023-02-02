@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+if ($_SESSION["s_usuario"] === null){
+  header("Location: /login/iniciar_sesion.php");
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>

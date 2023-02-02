@@ -12,9 +12,13 @@ $password = (isset($_POST['password'])) ? $_POST['password'] : '';
 
 $pass = md5($password);
 
-$consulta = "SELECT usuario, password FROM usuario WHERE usuario='$usuario' AND password='$pass' ";
+// $consulta = "SELECT usuario, password FROM usuario WHERE usuario='$usuario' AND password='$pass' ";
+// $resultado = $conexion->prepare($consulta);
+// $resultado->execute();
+
+$consulta = "SELECT usuario.idRol AS idRol, roles.descripcion AS rol FROM usuario JOIN roles ON usuario.idRol = roles.id WHERE usuario='$usuario' AND password='$pass' ";
 $resultado = $conexion->prepare($consulta);
-$resultado->execute();
+$resultado -> execute();
 
 if($resultado->rowCount() >= 1){
 
