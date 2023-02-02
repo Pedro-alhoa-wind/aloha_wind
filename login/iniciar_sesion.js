@@ -28,8 +28,10 @@ $('#formLogin').submit(function(e){
                          confirmButtonColor:'#3085d6',
                          confirmButtonText:'Ingresar'
                      }).then((result) => {
-                         if(result.value){
+                         if(usuario == "admin" || password == "1234"){
                              window.location.href = "/pagina_admin/index.php";
+                         }else{
+                            window.location.href = "/paginas_proyecto/elegir_deporte.php";
                          }
                      })
                      
@@ -37,14 +39,6 @@ $('#formLogin').submit(function(e){
              }    
           });
       }     
-
-
-
-
-
-
-
-
-
-
 });
+
+
