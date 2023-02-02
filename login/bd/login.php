@@ -24,6 +24,8 @@ if($resultado->rowCount() >= 1){
 
     $data = $resultado->fetchAll(PDO::FETCH_ASSOC);
     $_SESSION["s_usuario"] = $usuario;
+    $_SESSION["s_idRol"] = $data[0]["idRol"];
+    $_SESSION["s_rol_descripcion"] = $data[0]["rol"];
 }else{
 
     $_SESSION["s_usuario"] = null;
