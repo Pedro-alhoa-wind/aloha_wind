@@ -13,7 +13,9 @@ $usuario = (isset($_POST['usuario'])) ? $_POST['usuario'] : '';
 $password = (isset($_POST['password'])) ? $_POST['password'] : '';
 $id = (isset($_POST['id'])) ? $_POST['id'] : '';
 
-$consulta = "INSERT INTO usuario (nombre, apellido, nacionalidad, telefono, usuario, password) VALUES('$nombre', '$apellido', '$nacionalidad', '$telefono', '$usuario', '$password') ";			
+$pass = md5('$password');
+
+$consulta = "INSERT INTO usuario (nombre, apellido, nacionalidad, telefono, usuario, password) VALUES('$nombre', '$apellido', '$nacionalidad', '$telefono', '$usuario', '$pass') ";			
 $resultado = $conexion->prepare($consulta);
 $resultado->execute();
 

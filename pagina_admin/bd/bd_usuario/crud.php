@@ -14,9 +14,11 @@ $password = (isset($_POST['password'])) ? $_POST['password'] : '';
 $opcion = (isset($_POST['opcion'])) ? $_POST['opcion'] : '';
 $id = (isset($_POST['id'])) ? $_POST['id'] : '';
 
+$pass = md5('$password');
+
 switch($opcion){
     case 1: //alta
-        $consulta = "INSERT INTO usuario (nombre, apellido, nacionalidad, telefono, usuario, password) VALUES('$nombre', '$apellido', '$nacionalidad', '$telefono', '$usuario', '$password') ";			
+        $consulta = "INSERT INTO usuario (nombre, apellido, nacionalidad, telefono, usuario, password) VALUES('$nombre', '$apellido', '$nacionalidad', '$telefono', '$usuario', '$pass') ";			
         $resultado = $conexion->prepare($consulta);
         $resultado->execute(); 
 
