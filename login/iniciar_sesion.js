@@ -3,7 +3,7 @@ $('#formLogin').submit(function(e){
     var usuario = $.trim($("#usuario").val());
     var password = $.trim($("#password").val());
     
-    if(usuario.length == "" || password == ""){
+    if(usuario.length == "" || password.length == ""){
         Swal.fire({
             icon:'error',
             title:'Debe ingresar un usuario y/o password',
