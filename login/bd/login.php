@@ -1,6 +1,5 @@
 <?php
 
-<<<<<<< HEAD
 session_start();
 
 include_once '/wamp64/www/aloha_wind/login/bd/conexion.php';
@@ -29,34 +28,5 @@ if($resultado->rowCount() >= 1){
 
 print json_encode($data);
 $conexion=null;
-=======
-    $usuario=$_POST['usuario'];
-    $password=$_POST['password'];
-    session_start();
-    $_SESSION['usuario']=$usuario;
-
-    include('db.php');
-
-    $consulta="SELECT*FROM usuario where usuario='$usuario' and password='$password'";
-    
-    $resultado=mysqli_query($conexion,$consulta);
-
-    $filas=mysqli_num_rows($resultado);
-
-    if($filas){
-        header("location:/paginas_proyecto/elegir_deporte.html");
-    }else{
-        ?>
-        <?php 
-        header("location:/login/iniciar_sesion/iniciar_sesion.php");
-        ?>
-        <h1>Error en la autentificación</h1>
-        <?php
-    }
-    mysqli_free_result($resultado);
-    mysqli_close($conexion);
-
-
->>>>>>> 68c101d36949fb2962aeecf5492186182e9a0095
 
 
