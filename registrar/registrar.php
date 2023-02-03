@@ -29,7 +29,7 @@
             <div class="col-md-offset-2">
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="my-2">
-                        <a href="#">
+                        <a href="/index.php">
                             <img src="/assets/imagenes/logo_aloha_wind.png" alt="logo" style="height: 6rem;">
                         </a>
                     </div>
