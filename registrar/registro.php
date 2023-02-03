@@ -19,7 +19,12 @@ $consulta = "INSERT INTO usuario (nombre, apellido, nacionalidad, telefono, usua
 $resultado = $conexion->prepare($consulta);
 $resultado->execute();
 
+if ($resultado){
+    header ("Location: /login/iniciar_sesion.php");
+}else{
+    header("Location: /registrar/registrar.php");
 
+}
 
 
 $conexion = NULL;
