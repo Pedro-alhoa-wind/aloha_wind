@@ -20,6 +20,8 @@ $resultado = $conexion->prepare($consulta);
 $resultado->execute();
 
 
+
+
 $conexion = NULL;
 
 ?>
