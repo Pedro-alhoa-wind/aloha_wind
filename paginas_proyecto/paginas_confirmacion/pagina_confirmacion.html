@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-
-    <!-- Etiqueta meta requerida -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,46 +8,155 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/libls/bootstrap/css/bootstrap.min.css">
 
-    <!--Esta es mi carpeta de estilo-->
+    <!-- Bootstrap Datepicker -->
+    <link rel="stylesheet" href="/datepicker/css/bootstrap-datepicker3.standalone.min.css">
+
+
+    <!-- Esta es mis carpetas de estilos -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Quicksand:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/paginas_proyecto/paginas_confirmacion/pagina_confirmacion.css">
-    <title>Aloha-Wind</title>
+    <link rel="stylesheet" href="/paginas_proyecto/paginas_alquiler/alquiler_surf.css">
+
+
+    <title>Alhoa-Wind</title>
 </head>
-<body>
+<body style="background-color: ivory;">
+
+    <!-- Cabecera -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-offset-2">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="my-2">
+                        <a href="/paginas_proyecto/elegir_deporte.php">
+                            <img src="/assets/imagenes/logo_aloha_wind.png" alt="logo" style="height: 7rem;">
+                        </a>
+                    </div>
+                    <div class="my-2">
+                        <a href="/login/iniciar_sesion.php">
+                            <button type="button" class="btn-lg btn-primary">SALIR</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Body -->
+
+    <div class="container">
+        <p class="titulo text-md-center my-5 fs-1 fw-bolder">Selecciona tu alquiler material de Surf</p>
+    </div>
+
+    <!-- Elegir la tabla -->
+
+    <div class="container-md">
+        <div class="">
+            <p class="h6"><strong>Elija la tabla:</strong></p><br><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <select class="form-select" aria-label="select-alquiler-surf" name="" id="">
+                        <option selected>Elija su tabla</option>
+                        <option value="sup">10' SUP (Paddle surf)</option>
+                        <option value="longboard">9' Longboard</option>
+                        <option value="malibu">7' Malibu</option>
+                        <option value="evolutiva">6' Evolutiva</option>
+                        <option value="shortboard">5,5' Shortnoard</option>
+                        <option value="fish">5' Fish</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <img src="/assets/imagenes/tipos de tablas de surf.jpg" width="600px" alt="medida-tablas">
+                </div>
+            </div>  
+        </div>
+
+        <ul class="nav justify-content-center border-bottom pb-5 mb-3"></ul>
+
+        <!-- Elegir el traje neopreno -->
+
+            <p class="h6"><strong>Elija el tipo de neopreno:</strong></p><br><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <select class="form-select" aria-label="select-alquiler-neopreno" name="" id="">
+                        <option selected>Elija su talla de neopreno</option>
+                        <option value="xs">XS</option>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <img src="/assets/imagenes/Talla_medida_neopreno.jpg" width="600px" alt="">
+
+                </div>
+            </div>
+        <ul class="nav justify-content-center border-bottom pb-5 mb-3"></ul>
+    </div>
+
+    <!-- Calendario y horas -->
+
+    <div class="container">
+
+        <p class="h6"><strong>Elija el día y la hora:</strong></p><br>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5 mb-5" id="datepicker">
+            </div>
+            
+            <div class="col-3">
+                    <p class="mb-4">Mañana</p>
+                    <p class="h6">10:00</p>
+                    <input class="form-check-input fs-5 mb-5" type="radio" name="radio3" id="btn-hora-radio1" value="opcion-hora-1" aria-label="btn-hora-1">
+                    <p class="h6">12:00</p>
+                    <input class="form-check-input fs-5 mb-3" type="radio" name="radio3" id="btn-hora-radio2" value="opcion-hora-2" aria-label="btn-hora-2">
+            </div>
+            <div class="col-3">
+                <p class="mb-4">Tarde</p>
+                <p class="h6">16:00</p>
+                <input class="form-check-input fs-5 mb-5" type="radio" name="radio3" id="btn-hora-radio3" value="opcion-hora-3" aria-label="btn-hora-3">
+                <p class="h6">18:00</p>
+                <input class="form-check-input fs-5 mb-3" type="radio" name="radio3" id="btn-hora-radio4" value="opcion-hora-4" aria-label="btn-hora-4">
+
+            </div>
+        </div>      
+    </div>
+
+    <!-- Boton  -->
+
     <div class="container">
         <div class="row">
-            <div class="col-md">
-                <a href="/index.php">
-                    <img src="/assets/imagenes/logo_aloha_wind.png" id="imagen" alt="">
-                </a>
+            <div class="col-6">
+               <p>Retrocede a la pantalla elegir deporte <a href="/paginas_proyecto/elegir_deporte.php"> <-Atrás</a></p> 
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md">
-                <p>El equipo de Aloha-Wind le agradece que hayas confiado en nosotros, te esperamos!!</p>
+            <div class="col-6">
+                <button type="boton" class="btn btn-primary btn-lg">
+                    <a href="/paginas_proyecto/paginas_confirmacion/pagina_confirmacion.html" style="color: white;">Continuar</a>
+                </button>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md">
-                <img src="/assets/imagenes/saludo.png" id="saludo" alt="">
-            </div>
-
         </div>
     </div>
     
-
+     <!-- Pie -->
 
     <div class="container">
-        <footer class="py-3 my-4">
-          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-          </ul>
-          <p class="text-center text-muted fs-6 fst-italic">Copyright © 2022 Alhoa-Wind by Pedro Sánchez Palomino</p>
-        </footer>
-      </div>
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        </ul>
+        <p class="text-center text-muted fs-5 fst-italic">Copyright © 2022 Alhoa-Wind by Pedro Sánchez Palomino</p>
+      </footer>
+    </div>
 
-
-    <!-- enlaces -->
+    <!-- Enlaces -->
+    <script src="/libls/bootstrap/jquery/jquery-3.6.1.min.js"></script>
     <script src="/libls/bootstrap/js/bootstrap.min.js"></script>
     <script src="/libls/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="/datepicker/js/app.js"></script>
+
 </body>
 </html>
