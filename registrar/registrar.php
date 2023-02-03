@@ -106,7 +106,7 @@
                         <div class="my-3 mx-5">
                             <div class="col-md-5">
                                 <a href="/login/iniciar_sesion.php">
-                                <button type="submit" name="enviar" class="btn btn-primary btn-lg"> Enviar </button>
+                                <button type="submit" name="" class="btn btn-primary btn-lg"> Enviar </button>
                                 </a>
                             </div>
                         </div>
