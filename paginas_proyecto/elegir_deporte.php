@@ -28,12 +28,12 @@
                   <div class="col-md-offset-2">
                       <div class="d-flex justify-content-between align-items-center">
                           <div class="">
-                            <a href="#">
+                            <a href="/index.php">
                               <img src="/assets/imagenes/logo_aloha_wind.png" alt="logo" style="height: 6rem;">
                             </a>
                           </div>
                           <div class="">
-                            <a href="/login/iniciar_sesion/iniciar_sesion.php">
+                            <a href="/login/iniciar_sesion.php">
                               <button type="button" class="btn-lg btn-primary">SALIR</button>
                             </a>
                           </div>
@@ -61,7 +61,7 @@
               <img src="/assets/imagenes/surf redondo.png" class="card-img-top p-md-0" alt="surf">
               </div>
               <div class="col-md-8" style="font-family: 'Montserrat', sans-serif;">
-                <p class="text-xxl-center fs-3 fw-bold fst-italic">Aquí podras reservar tus clases o bien alquilar tu material duro</p>
+                <p class="text-xl-center fs-4 fw-bold fst-italic">Aquí podras reservar tus clases o bien alquilar tu material duro</p>
               </div>
 
             </div>
@@ -101,7 +101,7 @@
               <img src="/assets/imagenes/windsurf redondo.png" class="card-img-top p-md-0" alt="windsurf">
               </div>
               <div class="col-md-8" style="font-family: 'Montserrat', sans-serif;">
-                <p class="text-xxl-center fs-3 fw-bold fst-italic">Aquí podras reservar tus clases o bien alquilar tu material duro</p>
+                <p class="text-xl-center fs-4 fw-bold fst-italic">Aquí podras reservar tus clases o bien alquilar tu material duro</p>
               </div>
             </div>
 
