@@ -10,9 +10,9 @@ $conexion = $objeto -> Conectar();
 $usuario = (isset($_POST['usuario'])) ? $_POST['usuario'] : '';
 $password = (isset($_POST['password'])) ? $_POST['password'] : '';
 
-$pass = md5($password);
+// $pass = md5($password);
 
-$consulta = "SELECT usuario, password FROM usuario WHERE usuario='$usuario' AND password='$pass' ";
+$consulta = "SELECT usuario, password FROM usuario WHERE usuario='$usuario' AND password='$password' ";
 $resultado = $conexion->prepare($consulta);
 $resultado->execute();
 

@@ -13,11 +13,13 @@ $usuario = (isset($_POST['usuario'])) ? $_POST['usuario'] : '';
 $password = (isset($_POST['password'])) ? $_POST['password'] : '';
 $id = (isset($_POST['id'])) ? $_POST['id'] : '';
 
-$pass = md5('$password');
 
-$consulta = "INSERT INTO usuario (nombre, apellido, nacionalidad, telefono, usuario, password) VALUES('$nombre', '$apellido', '$nacionalidad', '$telefono', '$usuario', '$pass') ";			
+
+$consulta = "INSERT INTO usuario (nombre, apellido, nacionalidad, telefono, usuario, password) VALUES('$nombre', '$apellido', '$nacionalidad', '$telefono', '$usuario', '$password') ";			
 $resultado = $conexion->prepare($consulta);
 $resultado->execute();
+
+
 
 if ($resultado){
     header ("Location: /login/iniciar_sesion.php");
