@@ -34,7 +34,7 @@
                 </div>
                 <div class="modal-body">Presione "Cerrar sesión" si quiere salir, para mantenerse en la sesión pulse "Cancelar".</div>
                 <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
                     <a class="btn btn-primary" href="/login/bd/logout.php">Cerrar sesión</a>
                 </div>
             </div>
