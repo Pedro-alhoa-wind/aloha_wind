@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="/libls/sweetalert2/sweetalert2.min.css">
 
 
-    <title>Alhoa-Wind</title>
+    <title>Aloha-Wind</title>
 </head>
 <body style="background-color: #e3f2fd;">
 
@@ -62,7 +62,7 @@
 
                             </div><br>
 
-                            <p class="text-center fs-5" id="pulsa_aqui" >Si aun no tiene una cuenta <a class="link" href="/registrar/registrar.php">Pulsa aquí</a></p>
+                            <p class="text-center fs-5" id="pulsa_aqui" >Si aún no tiene una cuenta <a class="link" href="/registrar/registrar.php">Pulse aquí</a></p>
 
 
                     </form>
