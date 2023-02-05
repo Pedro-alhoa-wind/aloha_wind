@@ -4,7 +4,7 @@
 <div class="container">
 
 
-    <h1>CLIENTE</h1>
+    <h1>CLIENTES</h1>
 
     <?php
 include_once '/wamp64/www/aloha_wind/pagina_admin/bd/bd_usuario/conexion.php';

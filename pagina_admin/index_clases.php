@@ -3,7 +3,7 @@
 <!-- INICIO CRUD -->
 <div class="container">
 
-    <h1>CLASES</h1>
+    <h1>TIPO DE CLASES</h1>
 
 <?php
 include_once '/wamp64/www/aloha_wind/pagina_admin/bd/bd_clases/conexion.php';
