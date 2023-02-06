@@ -77,7 +77,7 @@
                 <div class="col-md-4">
                   <div class="boton-surf-reserva-clase">
                     <a href="/paginas_proyecto/paginas_alquiler/alquiler_surf.html">
-                      <button type="button" class="btn btn-primary"> ALQUILER</button>
+                      <button type="button" class="btn btn-primary"> ALQUILAR</button>
                     </a>
                   </div>
                 </div>
@@ -118,7 +118,7 @@
                 <div class="col-md-4">
                   <div class="boton-windsurf-reserva-clase">
                     <a href="/paginas_proyecto/paginas_alquiler/alquiler_windsurf.html">
-                      <button type="button" class="btn btn-primary"> ALQUILER</button>
+                      <button type="button" class="btn btn-primary"> ALQUILAR</button>
                     </a>
                   </div>
                 </div>
