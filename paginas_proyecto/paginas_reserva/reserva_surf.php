@@ -62,28 +62,28 @@
                             <img src="/assets/imagenes/monitor-1.png" class="rounded-circle img-fluid" width="150px" height="200px" alt="monitor1">
                         </figure>
                         <p style="font-family: Montserrat, Helvetica, sans-serif;">Pepe</p>
-                        <input class="form-check-input fs-5" type="radio" name="radio1" id="btn-monitor-radio1" value="opcion1" aria-label="btn-monitor-1">
+                        <input class="form-check-input fs-5" type="radio" name="radio1" id="btn-monitor-radio1" value="pepe" aria-label="btn-monitor-1">
                     </div>
                     <div class="col-3 text-center">
                         <figure class="figure2">    
                             <img src="/assets/imagenes/monitora-1.png" class="rounded-circle img-fluid" width="150px" height="200px" alt="monitor1">
                         </figure>
                         <p style="font-family: Montserrat, Helvetica, sans-serif;">Maria</p>
-                        <input class="form-check-input fs-5" type="radio" name="radio1" id="btn-monitor-radio2" value="opcion2" aria-label="btn-monitor-2">
+                        <input class="form-check-input fs-5" type="radio" name="radio1" id="btn-monitor-radio2" value="maria" aria-label="btn-monitor-2">
                     </div>
                     <div class="col-3 text-center">
                         <figure class="figure3">
                             <img src="/assets/imagenes/monitor-2.png" class="rounded-circle img-fluid" width="150px" height="200px" alt="monitor1">
                         </figure>
                         <p style="font-family: Montserrat, Helvetica, sans-serif;">Pablo</p>
-                        <input class="form-check-input fs-5" type="radio" name="radio1" id="btn-monitor-radio3" value="opcion3" aria-label="btn-monitor-3">
+                        <input class="form-check-input fs-5" type="radio" name="radio1" id="btn-monitor-radio3" value="pablo" aria-label="btn-monitor-3">
                     </div>
                     <div class="col-3 text-center">
                         <figure class="figure4">
                             <img src="/assets/imagenes/monitora-2.png" class="rounded-circle img-fluid" width="150px" height="200px" alt="monitor1">
                         </figure>
                         <p style="font-family: Montserrat, Helvetica, sans-serif;">Sofia</p>
-                        <input class="form-check-input fs-5" type="radio" name="radio1" id="btn-monitor-radio4" value="opcion4" aria-label="btn-monitor-4">
+                        <input class="form-check-input fs-5" type="radio" name="radio1" id="btn-monitor-radio4" value="sofia" aria-label="btn-monitor-4">
                     </div>
                 </div>
             </div>
@@ -100,7 +100,7 @@
                             <img src="/assets/imagenes/clase-grupo.jfif" alt="tipo-clase-1" class="rounded-circle img-fluid" style="width: 200px; height: 200px;">
                         </figure>
                         <p style="font-family: Montserrat, Helvetica, sans-serif;">Grupo (max. 4 personas)</p>
-                        <input class="form-check-input fs-5" type="radio" name="radio2" id="btn-tipclass-radio1" value="opcion-class-1" aria-label="btn-class-1">
+                        <input class="form-check-input fs-5" type="radio" name="radio2" id="btn-tipclass-radio1" value="grupo" aria-label="btn-class-1">
                     </div>
 
                     <div class="col-6 text-center">
@@ -108,7 +108,7 @@
                             <img src="/assets/imagenes/clase-individual.jfif" alt="tipo-clase-1" class="rounded-circle img-fluid" style="width: 200px; height: 200px;">
                         </figure>
                         <p style="font-family: Montserrat, Helvetica, sans-serif;">Individual</p>
-                        <input class="form-check-input fs-5" type="radio" name="radio2" id="btn-tipclass-radio2" value="opcion-class-2" aria-label="btn-class-2">
+                        <input class="form-check-input fs-5" type="radio" name="radio2" id="btn-tipclass-radio2" value="individual" aria-label="btn-class-2">
                     </div>
                 </div>
             <ul class="nav justify-content-center border-bottom pb-5 mb-3"></ul>
@@ -127,16 +127,16 @@
                 <div class="col-3">
                         <p class="mb-4">Mañana</p>
                         <p class="h6">10:00</p>
-                        <input class="form-check-input fs-5 mb-5" type="radio" name="radio3" id="btn-hora-radio1" value="opcion-hora-1" aria-label="btn-hora-1">
+                        <input class="form-check-input fs-5 mb-5" type="radio" name="radio3" id="btn-hora-radio1" value="10:00" aria-label="btn-hora-1">
                         <p class="h6">12:00</p>
-                        <input class="form-check-input fs-5 mb-3" type="radio" name="radio3" id="btn-hora-radio2" value="opcion-hora-2" aria-label="btn-hora-2">
+                        <input class="form-check-input fs-5 mb-3" type="radio" name="radio3" id="btn-hora-radio2" value="12:00" aria-label="btn-hora-2">
                 </div>
                 <div class="col-3">
                     <p class="mb-4">Tarde</p>
                     <p class="h6">16:00</p>
-                    <input class="form-check-input fs-5 mb-5" type="radio" name="radio3" id="btn-hora-radio3" value="opcion-hora-3" aria-label="btn-hora-3">
+                    <input class="form-check-input fs-5 mb-5" type="radio" name="radio3" id="btn-hora-radio3" value="16:00" aria-label="btn-hora-3">
                     <p class="h6">18:00</p>
-                    <input class="form-check-input fs-5 mb-3" type="radio" name="radio3" id="btn-hora-radio4" value="opcion-hora-4" aria-label="btn-hora-4">
+                    <input class="form-check-input fs-5 mb-3" type="radio" name="radio3" id="btn-hora-radio4" value="18:00" aria-label="btn-hora-4">
 
                 </div>
             </div>      
