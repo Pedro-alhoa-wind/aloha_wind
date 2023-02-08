@@ -52,94 +52,96 @@
     </div>
 
     <!-- Elegir la tabla -->
+    <form action="/paginas_proyecto/paginas_alquiler/registro_alquiler_surf.php" method="post">
+        <div class="container-md">
+            <div class="">
+                <p class="h6"><strong>Elija la tabla:</strong></p><br><br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <select class="form-select" aria-label="select-alquiler-surf" name="tablas" id="">
+                            <option selected>Elija su tabla</option>
+                            <option value="10 SUP Paddle">10' SUP (Paddle surf)</option>
+                            <option value="9 Longboard">9' Longboard</option>
+                            <option value="7 Malibu">7' Malibu</option>
+                            <option value="6 Evolutiva">6' Evolutiva</option>
+                            <option value="5,5 Shortboard">5,5' Shortboard</option>
+                            <option value="5 Fish">5' Fish</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/assets/imagenes/tipos de tablas de surf.jpg" width="600px" alt="medida-tablas">
+                    </div>
+                </div>  
+            </div>
 
-    <div class="container-md">
-        <div class="">
-            <p class="h6"><strong>Elija la tabla:</strong></p><br><br>
-            <div class="row">
-                <div class="col-md-6">
-                    <select class="form-select" aria-label="select-alquiler-surf" name="" id="">
-                        <option selected>Elija su tabla</option>
-                        <option value="sup">10' SUP (Paddle surf)</option>
-                        <option value="longboard">9' Longboard</option>
-                        <option value="malibu">7' Malibu</option>
-                        <option value="evolutiva">6' Evolutiva</option>
-                        <option value="shortboard">5,5' Shortboard</option>
-                        <option value="fish">5' Fish</option>
-                    </select>
+            <ul class="nav justify-content-center border-bottom pb-5 mb-3"></ul>
+
+            <!-- Elegir el traje neopreno -->
+
+                <p class="h6"><strong>Elija el tipo de neopreno:</strong></p><br><br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <select class="form-select" aria-label="select-alquiler-neopreno" name="neoprenos" id="">
+                            <option selected>Elija su talla de neopreno</option>
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/assets/imagenes/Talla_medida_neopreno.jpg" width="600px" alt="">
+
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <img src="/assets/imagenes/tipos de tablas de surf.jpg" width="600px" alt="medida-tablas">
-                </div>
-            </div>  
+            <ul class="nav justify-content-center border-bottom pb-5 mb-3"></ul>
         </div>
 
-        <ul class="nav justify-content-center border-bottom pb-5 mb-3"></ul>
+        <!-- Calendario y horas -->
 
-        <!-- Elegir el traje neopreno -->
+        <div class="container">
 
-            <p class="h6"><strong>Elija el tipo de neopreno:</strong></p><br><br>
+            <p class="h6"><strong>Elija el día y la hora:</strong></p><br>
             <div class="row">
-                <div class="col-md-6">
-                    <select class="form-select" aria-label="select-alquiler-neopreno" name="" id="">
-                        <option selected>Elija su talla de neopreno</option>
-                        <option value="xs">XS</option>
-                        <option value="s">S</option>
-                        <option value="m">M</option>
-                        <option value="l">L</option>
-                        <option value="xl">XL</option>
-                    </select>
+                <div class="col-md-1"></div>
+                <div class="col-md-5 mb-5" id="datepicker">
+                <input type="text" name="fecha">
                 </div>
-                <div class="col-md-6">
-                    <img src="/assets/imagenes/Talla_medida_neopreno.jpg" width="600px" alt="">
+                
+                <div class="col-3">
+                        <p class="mb-4">Mañana</p>
+                        <p class="h6">10:00</p>
+                        <input class="form-check-input fs-5 mb-5" type="radio" name="hora" id="btn-hora-radio1" value="10:00" aria-label="btn-hora-1">
+                        <p class="h6">12:00</p>
+                        <input class="form-check-input fs-5 mb-3" type="radio" name="hora" id="btn-hora-radio2" value="12:00" aria-label="btn-hora-2">
+                </div>
+                <div class="col-3">
+                    <p class="mb-4">Tarde</p>
+                    <p class="h6">16:00</p>
+                    <input class="form-check-input fs-5 mb-5" type="radio" name="hora" id="btn-hora-radio3" value="16:00" aria-label="btn-hora-3">
+                    <p class="h6">18:00</p>
+                    <input class="form-check-input fs-5 mb-3" type="radio" name="hora" id="btn-hora-radio4" value="18:00" aria-label="btn-hora-4">
 
                 </div>
-            </div>
-        <ul class="nav justify-content-center border-bottom pb-5 mb-3"></ul>
-    </div>
+            </div>      
+        </div>
 
-    <!-- Calendario y horas -->
+        <!-- Boton  -->
 
-    <div class="container">
-
-        <p class="h6"><strong>Elija el día y la hora:</strong></p><br>
-        <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-5 mb-5" id="datepicker">
-            </div>
-            
-            <div class="col-3">
-                    <p class="mb-4">Mañana</p>
-                    <p class="h6">10:00</p>
-                    <input class="form-check-input fs-5 mb-5" type="radio" name="radio3" id="btn-hora-radio1" value="opcion-hora-1" aria-label="btn-hora-1">
-                    <p class="h6">12:00</p>
-                    <input class="form-check-input fs-5 mb-3" type="radio" name="radio3" id="btn-hora-radio2" value="opcion-hora-2" aria-label="btn-hora-2">
-            </div>
-            <div class="col-3">
-                <p class="mb-4">Tarde</p>
-                <p class="h6">16:00</p>
-                <input class="form-check-input fs-5 mb-5" type="radio" name="radio3" id="btn-hora-radio3" value="opcion-hora-3" aria-label="btn-hora-3">
-                <p class="h6">18:00</p>
-                <input class="form-check-input fs-5 mb-3" type="radio" name="radio3" id="btn-hora-radio4" value="opcion-hora-4" aria-label="btn-hora-4">
-
-            </div>
-        </div>      
-    </div>
-
-    <!-- Boton  -->
-
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-               <p>Retrocede a la pantalla elegir deporte <a href="/paginas_proyecto/elegir_deporte.php"> <-Atrás</a></p> 
-            </div>
-            <div class="col-6">
-                <button type="boton" class="btn btn-primary btn-lg">
-                    <a href="/paginas_proyecto/paginas_confirmacion/pagina_confirmacion.html" style="color: white;">Continuar</a>
-                </button>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                <p>Retrocede a la pantalla elegir deporte <a href="/paginas_proyecto/elegir_deporte.php"> <-Atrás</a></p> 
+                </div>
+                <div class="col-6">
+                    <a href="/paginas_proyecto/paginas_confirmacion/pagina_confirmacion.html" style="color: white;">
+                        <button type="submit" class="btn btn-primary btn-lg">Continuar</button>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
+    </form>
     
      <!-- Pie -->
 
@@ -156,7 +158,7 @@
     <script src="/libls/bootstrap/js/bootstrap.min.js"></script>
     <script src="/libls/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/datepicker/js/bootstrap-datepicker.min.js"></script>
-    <script src="/datepicker/js/app.js"></script>
+    <script src="/paginas_proyecto/paginas_alquiler/main.js"></script>
 
 </body>
 </html>
