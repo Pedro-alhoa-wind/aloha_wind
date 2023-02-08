@@ -172,7 +172,7 @@
     <script src="/libls/bootstrap/js/bootstrap.min.js"></script>
     <script src="/libls/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/datepicker/js/bootstrap-datepicker.min.js"></script>
-    <script src="/datepicker/js/app.js"></script>
+    <script src="/paginas_proyecto/paginas_reserva/main_reserva_surf.js"></script>
 
 </body>
 </html>
