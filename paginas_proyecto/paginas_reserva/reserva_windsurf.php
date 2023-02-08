@@ -52,103 +52,105 @@
     </div>
 
     <!-- Elegir el monitor -->
-
-    <div class="container-md">
-        <div class="">
-            <p class="h6"><strong>Elija el monito:</strong></p><br><br>
-            <div class="row">
-                <div class="col-4 text-center">
-                    <figure class="figure1">
-                        <img src="/assets/imagenes/monitora-1.png" class="rounded-circle img-fluid" width="150px" height="200px" alt="monitor1">
-                    </figure>
-                    <p style="font-family: Montserrat, Helvetica, sans-serif;">Conce</p>
-                    <input class="form-check-input fs-5" type="radio" name="radio1" id="btn-monitor-radio1" value="opcion1" aria-label="btn-monitor-1">
-                </div>
-                <div class="col-4 text-center">
-                    <figure class="figure2">    
-                        <img src="/assets/imagenes/monitor-2.png" class="rounded-circle img-fluid" width="150px" height="200px" alt="monitor1">
-                    </figure>
-                    <p style="font-family: Montserrat, Helvetica, sans-serif;">Pedro</p>
-                    <input class="form-check-input fs-5" type="radio" name="radio1" id="btn-monitor-radio2" value="opcion2" aria-label="btn-monitor-2">
-                </div>
-                <div class="col-4 text-center">
-                    <figure class="figure3">
-                        <img src="/assets/imagenes/monitora-2.png" class="rounded-circle img-fluid" width="150px" height="200px" alt="monitor1">
-                    </figure>
-                    <p style="font-family: Montserrat, Helvetica, sans-serif;">Rocio</p>
-                    <input class="form-check-input fs-5" type="radio" name="radio1" id="btn-monitor-radio3" value="opcion3" aria-label="btn-monitor-3">
+    <form action="/paginas_proyecto/paginas_reserva/registro_reserva_windsurf.php" method="post">
+        <div class="container-md">
+            <div class="">
+                <p class="h6"><strong>Elija el monito:</strong></p><br><br>
+                <div class="row">
+                    <div class="col-4 text-center">
+                        <figure class="figure1">
+                            <img src="/assets/imagenes/monitora-1.png" class="rounded-circle img-fluid" width="150px" height="200px" alt="monitor1">
+                        </figure>
+                        <p style="font-family: Montserrat, Helvetica, sans-serif;">Conce</p>
+                        <input class="form-check-input fs-5" type="radio" name="monitor" id="btn-monitor-radio1" value="Conce" aria-label="btn-monitor-1">
+                    </div>
+                    <div class="col-4 text-center">
+                        <figure class="figure2">    
+                            <img src="/assets/imagenes/monitor-2.png" class="rounded-circle img-fluid" width="150px" height="200px" alt="monitor1">
+                        </figure>
+                        <p style="font-family: Montserrat, Helvetica, sans-serif;">Pedro</p>
+                        <input class="form-check-input fs-5" type="radio" name="monitor" id="btn-monitor-radio2" value="Pedro" aria-label="btn-monitor-2">
+                    </div>
+                    <div class="col-4 text-center">
+                        <figure class="figure3">
+                            <img src="/assets/imagenes/monitora-2.png" class="rounded-circle img-fluid" width="150px" height="200px" alt="monitor1">
+                        </figure>
+                        <p style="font-family: Montserrat, Helvetica, sans-serif;">Rocio</p>
+                        <input class="form-check-input fs-5" type="radio" name="monitor" id="btn-monitor-radio3" value="Rocio" aria-label="btn-monitor-3">
+                    </div>
                 </div>
             </div>
+
+            <ul class="nav justify-content-center border-bottom pb-5 mb-3"></ul>
+
+            <!-- Elegir el tipo clase -->
+
+                <p class="h6"><strong>Elija el tipo de clase:</strong></p><br><br>
+
+                <div class="row">
+                    <div class="col-6 text-center">
+                        <figure>
+                            <img src="/assets/imagenes/grupo-windsurf.png" alt="tipo-clase-1" class="rounded-circle img-fluid" style="width: 200px; height: 200px;">
+                        </figure>
+                        <p style="font-family: Montserrat, Helvetica, sans-serif;">Grupo (max. 4 personas)</p>
+                        <input class="form-check-input fs-5" type="radio" name="clase" id="btn-tipclass-radio1" value="Grupo" aria-label="btn-class-1">
+                    </div>
+
+                    <div class="col-6 text-center">
+                        <figure>
+                            <img src="/assets/imagenes/windsurf redondo.png" alt="tipo-clase-1" class="rounded-circle img-fluid" style="width: 200px; height: 200px;">
+                        </figure>
+                        <p style="font-family: Montserrat, Helvetica, sans-serif;">Individual</p>
+                        <input class="form-check-input fs-5" type="radio" name="clase" id="btn-tipclass-radio2" value="Individual" aria-label="btn-class-2">
+                    </div>
+                </div>
+            <ul class="nav justify-content-center border-bottom pb-5 mb-3"></ul>
         </div>
 
-        <ul class="nav justify-content-center border-bottom pb-5 mb-3"></ul>
+        <!-- Calendario y horas -->
 
-        <!-- Elegir el tipo clase -->
+        <div class="container">
 
-            <p class="h6"><strong>Elija el tipo de clase:</strong></p><br><br>
-
+            <p class="h6"><strong>Elija el día y la hora:</strong></p><br>
             <div class="row">
-                <div class="col-6 text-center">
-                    <figure>
-                        <img src="/assets/imagenes/grupo-windsurf.png" alt="tipo-clase-1" class="rounded-circle img-fluid" style="width: 200px; height: 200px;">
-                    </figure>
-                    <p style="font-family: Montserrat, Helvetica, sans-serif;">Grupo (max. 4 personas)</p>
-                    <input class="form-check-input fs-5" type="radio" name="radio2" id="btn-tipclass-radio1" value="opcion-class-1" aria-label="btn-class-1">
+                <div class="col-md-1"></div>
+                <div class="col-md-5 mb-5" id="datepicker">
+                    <input type="text" name="fecha">
                 </div>
-
-                <div class="col-6 text-center">
-                    <figure>
-                        <img src="/assets/imagenes/windsurf redondo.png" alt="tipo-clase-1" class="rounded-circle img-fluid" style="width: 200px; height: 200px;">
-                    </figure>
-                    <p style="font-family: Montserrat, Helvetica, sans-serif;">Individual</p>
-                    <input class="form-check-input fs-5" type="radio" name="radio2" id="btn-tipclass-radio2" value="opcion-class-2" aria-label="btn-class-2">
+                
+                <div class="col-3">
+                    <p class="mb-4">Mañana</p>
+                    <p class="h6">11:00</p>
+                    <input class="form-check-input fs-5 mb-5" type="radio" name="hora" id="btn-hora-radio1" value="11:00" aria-label="btn-hora-1">
+                    <p class="h6">13:00</p>
+                    <input class="form-check-input fs-5 mb-3" type="radio" name="hora" id="btn-hora-radio2" value="13:00" aria-label="btn-hora-2">
                 </div>
-            </div>
-        <ul class="nav justify-content-center border-bottom pb-5 mb-3"></ul>
-    </div>
+                <div class="col-3">
+                    <p class="mb-4">Tarde</p>
+                    <p class="h6">17:00</p>
+                    <input class="form-check-input fs-5 mb-5" type="radio" name="hora" id="btn-hora-radio3" value="17:00" aria-label="btn-hora-3">
+                    <p class="h6">19:00</p>
+                    <input class="form-check-input fs-5 mb-3" type="radio" name="hora" id="btn-hora-radio4" value="19:00" aria-label="btn-hora-4">
 
-    <!-- Calendario y horas -->
-
-    <div class="container">
-
-        <p class="h6"><strong>Elija el día y la hora:</strong></p><br>
-        <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-5 mb-5" id="datepicker">
-            </div>
-            
-            <div class="col-3">
-                <p class="mb-4">Mañana</p>
-                <p class="h6">11:00</p>
-                <input class="form-check-input fs-5 mb-5" type="radio" name="radio3" id="btn-hora-radio1" value="opcion-hora-1" aria-label="btn-hora-1">
-                <p class="h6">13:00</p>
-                <input class="form-check-input fs-5 mb-3" type="radio" name="radio3" id="btn-hora-radio2" value="opcion-hora-2" aria-label="btn-hora-2">
-            </div>
-            <div class="col-3">
-                <p class="mb-4">Tarde</p>
-                <p class="h6">17:00</p>
-                <input class="form-check-input fs-5 mb-5" type="radio" name="radio3" id="btn-hora-radio3" value="opcion-hora-3" aria-label="btn-hora-3">
-                <p class="h6">19:00</p>
-                <input class="form-check-input fs-5 mb-3" type="radio" name="radio3" id="btn-hora-radio4" value="opcion-hora-4" aria-label="btn-hora-4">
-
-            </div>
-        </div>      
-    </div>
-
+                </div>
+            </div>      
+        </div>
+    
     <!-- Boton  -->
 
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-               <p>Retrocede a la pantalla elegir deporte <a href="/paginas_proyecto/elegir_deporte.php"> <-Atrás</a></p> 
-            </div>
-            <div class="col-6">
-                <button type="boton" class="btn btn-primary btn-lg">
-                    <a href="/paginas_proyecto/paginas_confirmacion/pagina_confirmacion.html" style="color: white;">Continuar</a>
-                </button>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                <p>Retrocede a la pantalla elegir deporte <a href="/paginas_proyecto/elegir_deporte.php"> <-Atrás</a></p> 
+                </div>
+                <div class="col-6">
+                    <a href="/paginas_proyecto/paginas_confirmacion/pagina_confirmacion.html" style="color: white;">
+                        <button type="submit" class="btn btn-primary btn-lg">Continuar</button>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
+    </form>
     
      <!-- Pie -->
 
@@ -165,7 +167,7 @@
     <script src="/libls/bootstrap/js/bootstrap.min.js"></script>
     <script src="/libls/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/datepicker/js/bootstrap-datepicker.min.js"></script>
-    <script src="/datepicker/js/app.js"></script>
+    <script src="/paginas_proyecto/paginas_reserva/main.js"></script>
 
 </body>
 </html>
