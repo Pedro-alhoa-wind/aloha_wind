@@ -52,39 +52,40 @@
     </div>
 
     <!-- Elegir el monitor -->
-    <form action="" method="post">
+    <form action="/paginas_proyecto/paginas_reserva/registro_reserva_surf.php" method="post">
         <div class="container-md">
             <div class="">
                 <p class="h6"><strong>Elija el monitores:</strong></p><br><br>
                 <div class="row">
-                    <div class="col-3 text-center">
-                        <figure class="figure1">
-                            <img src="/assets/imagenes/monitor-1.png" class="rounded-circle img-fluid" width="150px" height="200px" alt="monitor1">
-                        </figure>
-                        <p style="font-family: Montserrat, Helvetica, sans-serif;">Pepe</p>
-                        <input class="form-check-input fs-5" type="radio" name="monitor" id="btn-monitor-radio1" value="pepe" aria-label="btn-monitor-1">
-                    </div>
-                    <div class="col-3 text-center">
-                        <figure class="figure2">    
-                            <img src="/assets/imagenes/monitora-1.png" class="rounded-circle img-fluid" width="150px" height="200px" alt="monitor1">
-                        </figure>
-                        <p style="font-family: Montserrat, Helvetica, sans-serif;">Maria</p>
-                        <input class="form-check-input fs-5" type="radio" name="monitor" id="btn-monitor-radio2" value="maria" aria-label="btn-monitor-2">
-                    </div>
-                    <div class="col-3 text-center">
-                        <figure class="figure3">
-                            <img src="/assets/imagenes/monitor-2.png" class="rounded-circle img-fluid" width="150px" height="200px" alt="monitor1">
-                        </figure>
-                        <p style="font-family: Montserrat, Helvetica, sans-serif;">Pablo</p>
-                        <input class="form-check-input fs-5" type="radio" name="monitor" id="btn-monitor-radio3" value="pablo" aria-label="btn-monitor-3">
-                    </div>
-                    <div class="col-3 text-center">
-                        <figure class="figure4">
-                            <img src="/assets/imagenes/monitora-2.png" class="rounded-circle img-fluid" width="150px" height="200px" alt="monitor1">
-                        </figure>
-                        <p style="font-family: Montserrat, Helvetica, sans-serif;">Sofia</p>
-                        <input class="form-check-input fs-5" type="radio" name="monitor" id="btn-monitor-radio4" value="sofia" aria-label="btn-monitor-4">
-                    </div>
+                        <div class="col-3 text-center">
+                            <figure class="figure1">
+                                <img src="/assets/imagenes/monitor-1.png" class="rounded-circle img-fluid" width="150px" height="200px" alt="monitor1">
+                            </figure>
+                            <p style="font-family: Montserrat, Helvetica, sans-serif;">Pepe</p>
+                            <input class="form-check-input fs-5" type="radio" name="monitor" id="btn-monitor-radio1" value="Pepe" aria-label="btn-monitor-1">
+                        </div>
+                        <div class="col-3 text-center">
+                            <figure class="figure2">    
+                                <img src="/assets/imagenes/monitora-1.png" class="rounded-circle img-fluid" width="150px" height="200px" alt="monitor1">
+                            </figure>
+                            <p style="font-family: Montserrat, Helvetica, sans-serif;">Maria</p>
+                            <input class="form-check-input fs-5" type="radio" name="monitor" id="btn-monitor-radio2" value="Maria" aria-label="btn-monitor-2">
+                        </div>
+                        <div class="col-3 text-center">
+                            <figure class="figure3">
+                                <img src="/assets/imagenes/monitor-2.png" class="rounded-circle img-fluid" width="150px" height="200px" alt="monitor1">
+                            </figure>
+                            <p style="font-family: Montserrat, Helvetica, sans-serif;">Pablo</p>
+                            <input class="form-check-input fs-5" type="radio" name="monitor" id="btn-monitor-radio3" value="Pablo" aria-label="btn-monitor-3">
+                        </div>
+                        <div class="col-3 text-center">
+                            <figure class="figure4">
+                                <img src="/assets/imagenes/monitora-2.png" class="rounded-circle img-fluid" width="150px" height="200px" alt="monitor1">
+                            </figure>
+                            <p style="font-family: Montserrat, Helvetica, sans-serif;">Sofia</p>
+                            <input class="form-check-input fs-5" type="radio" name="monitor" id="btn-monitor-radio4" value="Sofia" aria-label="btn-monitor-4">
+                        </div>
+                    
                 </div>
             </div>
 
@@ -100,7 +101,7 @@
                             <img src="/assets/imagenes/clase-grupo.jfif" alt="tipo-clase-1" class="rounded-circle img-fluid" style="width: 200px; height: 200px;">
                         </figure>
                         <p style="font-family: Montserrat, Helvetica, sans-serif;">Grupo (max. 4 personas)</p>
-                        <input class="form-check-input fs-5" type="radio" name="clase" id="btn-tipclass-radio1" value="grupo" aria-label="btn-class-1">
+                        <input class="form-check-input fs-5" type="radio" name="clase" id="btn-tipclass-radio1" value="Grupo" aria-label="btn-class-1">
                     </div>
 
                     <div class="col-6 text-center">
@@ -108,7 +109,7 @@
                             <img src="/assets/imagenes/clase-individual.jfif" alt="tipo-clase-1" class="rounded-circle img-fluid" style="width: 200px; height: 200px;">
                         </figure>
                         <p style="font-family: Montserrat, Helvetica, sans-serif;">Individual</p>
-                        <input class="form-check-input fs-5" type="radio" name="clase" id="btn-tipclass-radio2" value="individual" aria-label="btn-class-2">
+                        <input class="form-check-input fs-5" type="radio" name="clase" id="btn-tipclass-radio2" value="Individual" aria-label="btn-class-2">
                     </div>
                 </div>
             <ul class="nav justify-content-center border-bottom pb-5 mb-3"></ul>
@@ -122,6 +123,7 @@
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-5 mb-5" id="datepicker">
+                    <input type="text" name="fecha">
                 </div>
                 
                 <div class="col-3">
@@ -150,9 +152,10 @@
                 <p>Retrocede a la pantalla elegir deporte <a href="/paginas_proyecto/elegir_deporte.php"> <-Atrás</a></p> 
                 </div>
                 <div class="col-6">
-                    <button type="boton" class="btn btn-primary btn-lg">
-                        <a href="/paginas_proyecto/paginas_confirmacion/pagina_confirmacion.html" style="color: white;">Continuar</a>
-                    </button>
+                    <a href="/paginas_proyecto/paginas_confirmacion/pagina_confirmacion.html" style="color: white;">
+                        <button type="submit" class="btn btn-primary btn-lg">Continuar</button>
+                    </a>
+                    
                 </div>
             </div>
         </div>
@@ -171,7 +174,7 @@
     <script src="/libls/bootstrap/jquery/jquery-3.6.1.min.js"></script>
     <script src="/libls/bootstrap/js/bootstrap.min.js"></script>
     <script src="/libls/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="/datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="/datepicker/js/bootstrap-datepicker.min.js" charset="UTF-8"></script>
     <script src="/paginas_proyecto/paginas_reserva/main_reserva_surf.js"></script>
 
 </body>
