@@ -25,144 +25,146 @@
 <body style="background-color: ivory;">
 
     <!-- Cabecera -->
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-offset-2">
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="my-2">
-                        <a href="/paginas_proyecto/elegir_deporte.php">
-                            <img src="/assets/imagenes/logo_aloha_wind.png" alt="logo" style="height: 7rem;">
-                        </a>
+    
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-offset-2">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="my-2">
+                            <a href="/paginas_proyecto/elegir_deporte.php">
+                                <img src="/assets/imagenes/logo_aloha_wind.png" alt="logo" style="height: 7rem;">
+                            </a>
+                        </div>
+                        <div class="my-2">
+                            <a href="/login/iniciar_sesion.php">
+                                <button type="button" class="btn-lg btn-primary">SALIR</button>
+                            </a>
+                        </div>
                     </div>
-                    <div class="my-2">
-                        <a href="/login/iniciar_sesion.php">
-                            <button type="button" class="btn-lg btn-primary">SALIR</button>
-                        </a>
+                </div>
+            </div>
+        </div>
+    <form action="/paginas_proyecto/paginas_alquiler/registro_alquiler_windsurf.php" method="post">
+        <!-- Body -->
+
+        <div class="container">
+            <p class="titulo text-md-center my-5 fs-1 fw-bolder">Selecciona tu alquiler material de Windsurf</p>
+        </div>
+
+        <!-- Elegir la tabla -->
+
+        <div class="container-md">
+            <div class="">
+                <p class="h6"><strong>Elija la tabla:</strong></p><br><br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <select class="form-select" aria-label="select-alquiler-tabla-windsurf" name="tablas" id="">
+                            <option selected>Elija su tabla</option>
+                            <option value="78L">78L.</option>
+                            <option value="87L">87L.</option>
+                            <option value="93L">93L.</option>
+                            <option value="103L">103L.</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/assets/imagenes/tabla_windsurf.jpeg" width="600px" alt="medida-tablas">
+                    </div>
+                </div>  
+            </div>
+
+            <ul class="nav justify-content-center border-bottom pb-5 mb-3"></ul>
+
+            <!-- Elegir tipo vela -->
+
+            <div class="">
+                <p class="h6"><strong>Elija la de vela:</strong></p><br><br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <select class="form-select" aria-label="select-alquiler-vela-windsurf" name="velas" id="">
+                            <option selected>Elija su vela</option>
+                            <option value="Vela Olas">Vela Olas</option>
+                            <option value="Vela Race">Vela Race</option>
+                            <option value="Vela Freeride">Vela Freeride</option>
+                            <option value="Vela Freestyle">Vela Freestyle</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/assets/imagenes/tipo_velas_windsurf.jpg" width="600px" alt="medida-tablas">
+                    </div>
+                </div>  
+            </div>
+
+            <ul class="nav justify-content-center border-bottom pb-5 mb-3"></ul>
+            <!-- Elegir el traje neopreno -->
+
+                <p class="h6"><strong>Elija el tipo de neopreno:</strong></p><br><br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <select class="form-select" aria-label="select-alquiler-neopreno" name="neoprenos" id="">
+                            <option selected>Elija su talla de neopreno</option>
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/assets/imagenes/Talla_medida_neopreno.jpg" width="600px" alt="">
+
                     </div>
                 </div>
-            </div>
+            <ul class="nav justify-content-center border-bottom pb-5 mb-3"></ul>
         </div>
-    </div>
 
-    <!-- Body -->
+            <!-- Calendario y horas -->
 
-    <div class="container">
-        <p class="titulo text-md-center my-5 fs-1 fw-bolder">Selecciona tu alquiler material de Windsurf</p>
-    </div>
+        <div class="container">
 
-    <!-- Elegir la tabla -->
-
-    <div class="container-md">
-        <div class="">
-            <p class="h6"><strong>Elija la tabla:</strong></p><br><br>
+            <p class="h6"><strong>Elija el día y la hora:</strong></p><br>
             <div class="row">
-                <div class="col-md-6">
-                    <select class="form-select" aria-label="select-alquiler-tabla-windsurf" name="" id="">
-                        <option selected>Elija su tabla</option>
-                        <option value="78L">78L.</option>
-                        <option value="87">87L.</option>
-                        <option value="93">93L.</option>
-                        <option value="103">103L.</option>
-                    </select>
+                <div class="col-md-1"></div>
+                <div class="col-md-5 mb-5" id="datepicker">
+                    <input type="text" name="fecha">
                 </div>
-                <div class="col-md-6">
-                    <img src="/assets/imagenes/tabla_windsurf.jpeg" width="600px" alt="medida-tablas">
+                
+                <div class="col-3">
+                        <p class="mb-4">Mañana</p>
+                        <p class="h6">10:00</p>
+                        <input class="form-check-input fs-5 mb-5" type="radio" name="hora" id="btn-hora-radio1" value="10:00" aria-label="btn-hora-1">
+                        <p class="h6">11:00</p>
+                        <input class="form-check-input fs-5 mb-5" type="radio" name="hora" id="btn-hora-radio2" value="11:00" aria-label="btn-hora-2">
+                        <p class="h6">12:00</p>
+                        <input class="form-check-input fs-5 mb-3" type="radio" name="hora" id="btn-hora-radio3" value="12:00" aria-label="btn-hora-3">
                 </div>
-            </div>  
+                <div class="col-3">
+                    <p class="mb-4">Tarde</p>
+                    <p class="h6">16:00</p>
+                    <input class="form-check-input fs-5 mb-5" type="radio" name="hora" id="btn-hora-radio4" value="16:00" aria-label="btn-hora-4">
+                    <p class="h6">17:00</p>
+                    <input class="form-check-input fs-5 mb-5" type="radio" name="hora" id="btn-hora-radio5" value="17:00" aria-label="btn-hora-5">
+                    <p class="h6">18:00</p>
+                    <input class="form-check-input fs-5 mb-3" type="radio" name="hora" id="btn-hora-radio6" value="18:00" aria-label="btn-hora-6">
+
+                </div>
+            </div>      
         </div>
 
-        <ul class="nav justify-content-center border-bottom pb-5 mb-3"></ul>
+            <!-- Boton  -->
 
-        <!-- Elegir tipo vela -->
-
-        <div class="">
-            <p class="h6"><strong>Elija la de vela:</strong></p><br><br>
+        <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <select class="form-select" aria-label="select-alquiler-vela-windsurf" name="" id="">
-                        <option selected>Elija su vela</option>
-                        <option value="vela-olas">Vela Olas</option>
-                        <option value="vela-race">Vela Race</option>
-                        <option value="vela-freeride">Vela Freeride</option>
-                        <option value="vela-freestyle">Vela Freestyle</option>
-                    </select>
+                <div class="col-6">
+                <p>Retrocede a la pantalla elegir deporte <a href="/paginas_proyecto/elegir_deporte.php"> <-Atrás</a></p> 
                 </div>
-                <div class="col-md-6">
-                    <img src="/assets/imagenes/tipo_velas_windsurf.jpg" width="600px" alt="medida-tablas">
+                <div class="col-6">
+                    <a href="/paginas_proyecto/paginas_confirmacion/pagina_confirmacion.html" style="color: white;">
+                        <button type="submit" class="btn btn-primary btn-lg">Continuar</button>
+                    </a>
                 </div>
-            </div>  
-        </div>
-
-        <ul class="nav justify-content-center border-bottom pb-5 mb-3"></ul>
-        <!-- Elegir el traje neopreno -->
-
-            <p class="h6"><strong>Elija el tipo de neopreno:</strong></p><br><br>
-            <div class="row">
-                <div class="col-md-6">
-                    <select class="form-select" aria-label="select-alquiler-neopreno" name="" id="">
-                        <option selected>Elija su talla de neopreno</option>
-                        <option value="xs">XS</option>
-                        <option value="s">S</option>
-                        <option value="m">M</option>
-                        <option value="l">L</option>
-                        <option value="xl">XL</option>
-                    </select>
-                </div>
-                <div class="col-md-6">
-                    <img src="/assets/imagenes/Talla_medida_neopreno.jpg" width="600px" alt="">
-
-                </div>
-            </div>
-        <ul class="nav justify-content-center border-bottom pb-5 mb-3"></ul>
-    </div>
-
-    <!-- Calendario y horas -->
-
-    <div class="container">
-
-        <p class="h6"><strong>Elija el día y la hora:</strong></p><br>
-        <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-5 mb-5" id="datepicker">
-            </div>
-            
-            <div class="col-3">
-                    <p class="mb-4">Mañana</p>
-                    <p class="h6">10:00</p>
-                    <input class="form-check-input fs-5 mb-5" type="radio" name="radio3" id="btn-hora-radio1" value="opcion-hora-1" aria-label="btn-hora-1">
-                    <p class="h6">11:00</p>
-                    <input class="form-check-input fs-5 mb-5" type="radio" name="radio3" id="btn-hora-radio2" value="opcion-hora-2" aria-label="btn-hora-2">
-                    <p class="h6">12:00</p>
-                    <input class="form-check-input fs-5 mb-3" type="radio" name="radio3" id="btn-hora-radio3" value="opcion-hora-3" aria-label="btn-hora-3">
-            </div>
-            <div class="col-3">
-                <p class="mb-4">Tarde</p>
-                <p class="h6">16:00</p>
-                <input class="form-check-input fs-5 mb-5" type="radio" name="radio3" id="btn-hora-radio4" value="opcion-hora-4" aria-label="btn-hora-4">
-                <p class="h6">17:00</p>
-                <input class="form-check-input fs-5 mb-5" type="radio" name="radio3" id="btn-hora-radio5" value="opcion-hora-5" aria-label="btn-hora-5">
-                <p class="h6">18:00</p>
-                <input class="form-check-input fs-5 mb-3" type="radio" name="radio3" id="btn-hora-radio6" value="opcion-hora-6" aria-label="btn-hora-6">
-
-            </div>
-        </div>      
-    </div>
-
-    <!-- Boton  -->
-
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-               <p>Retrocede a la pantalla elegir deporte <a href="/paginas_proyecto/elegir_deporte.php"> <-Atrás</a></p> 
-            </div>
-            <div class="col-6">
-                <button type="boton" class="btn btn-primary btn-lg">
-                    <a href="/paginas_proyecto/paginas_confirmacion/pagina_confirmacion.html" style="color: white;">Continuar</a>
-                </button>
             </div>
         </div>
-    </div>
+    </form>
     
      <!-- Pie -->
 
@@ -179,7 +181,7 @@
     <script src="/libls/bootstrap/js/bootstrap.min.js"></script>
     <script src="/libls/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/datepicker/js/bootstrap-datepicker.min.js"></script>
-    <script src="/datepicker/js/app.js"></script>
+    <script src="/paginas_proyecto/paginas_alquiler/main.js"></script>
 
 </body>
 </html>
