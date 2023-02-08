@@ -69,14 +69,14 @@
             <div class="card-body">
               <div class="row justify-content-md-end">
                 <div class="col-md-4">
-                  <a href="/paginas_proyecto/paginas_reserva/reserva_surf.html">
+                  <a href="/paginas_proyecto/paginas_reserva/reserva_surf.php">
                     <button type="button" class="btn btn-primary"> RESERVAR</button>
                   </a> 
                 </div>
 
                 <div class="col-md-4">
                   <div class="boton-surf-reserva-clase">
-                    <a href="/paginas_proyecto/paginas_alquiler/alquiler_surf.html">
+                    <a href="/paginas_proyecto/paginas_alquiler/alquiler_surf.php">
                       <button type="button" class="btn btn-primary"> ALQUILAR</button>
                     </a>
                   </div>
@@ -109,7 +109,7 @@
               <div class="row justify-content-md-end">
                 <div class="col-4">
                   <div class="boton-windsurf-reserva-clase">
-                    <a href="/paginas_proyecto/paginas_reserva/reserva_windsurf.html">
+                    <a href="/paginas_proyecto/paginas_reserva/reserva_windsurf.php">
                       <button type="button" class="btn btn-primary"> RESERVAR</button>
                     </a>
                     </div>
@@ -117,7 +117,7 @@
     
                 <div class="col-md-4">
                   <div class="boton-windsurf-reserva-clase">
-                    <a href="/paginas_proyecto/paginas_alquiler/alquiler_windsurf.html">
+                    <a href="/paginas_proyecto/paginas_alquiler/alquiler_windsurf.php">
                       <button type="button" class="btn btn-primary"> ALQUILAR</button>
                     </a>
                   </div>
