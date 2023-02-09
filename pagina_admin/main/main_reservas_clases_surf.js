@@ -23,42 +23,45 @@ $(document).ready(function(){
              "sProcessing":"Procesando...",
         },
 
-        //botones de pdf, excel e imprimir
-        responsive: "true",
-        dom: 'Bfrtilp',
-        buttons:[
+    //botones de pdf, excel e imprimir
+            responsive: "true",
+            dom: 'Bfrtilp',
+             buttons:[
 
-                {
-                    extend:     'excelHtml5',
-                    text:       '<i class="fas fa-file-excel"></i>',
-                    titleAttr:  'Exportar a Excel',
-                    className:  'btn btn-success'
-                },
-                {
+           {
+               extend:     'excelHtml5',
+               text:       '<i class="fas fa-file-excel"></i>',
+               titleAttr:  'Exportar a Excel',
+               className:  'btn btn-success'
+           },
+           {
 
-                    extend:     'pdfHtml5',
-                    text:       '<i class="fas fa-file-pdf"></i>',
-                    titleAttr:  'Exportar a PDF',
-                    className:  'btn btn-danger'
-                },
+               extend:     'pdfHtml5',
+               text:       '<i class="fas fa-file-pdf"></i>',
+               titleAttr:  'Exportar a PDF',
+               className:  'btn btn-danger'
+           },
 
-                {
+           {
 
-                    extend:     'print',
-                    text:       '<i class="fa fa-print"></i>',
-                    titleAttr:  'Imprimir',
-                    className:  'btn btn-info'
+               extend:     'print',
+               text:       '<i class="fa fa-print"></i>',
+               titleAttr:  'Imprimir',
+               className:  'btn btn-info'
 
-                },
+           },
 
-        ]
+   ]
+
+
+
     });
     
 $("#btnNuevo").click(function(){
     $("#formReservaClaseSurf").trigger("reset");
     $(".modal-header").css("background-color", "#28a745");
     $(".modal-header").css("color", "white");
-    $(".modal-title").text("Nueva Reserva Clase Surf");            
+    $(".modal-title").text("Nueva reserva clase surf");            
     $("#modalCRUD").modal("show");        
     id=null;
     opcion = 1; //alta
@@ -72,8 +75,9 @@ $(document).on("click", ".btnEditar", function(){
     id = parseInt(fila.find('td:eq(0)').text());
     monitor = fila.find('td:eq(1)').text();
     clase = fila.find('td:eq(2)').text();
-    fecha = parseInt(fila.find('td:eq(3)').text());
+    fecha = fila.find('td:eq(3)').text();
     hora = fila.find('td:eq(4)').text();
+    
     
     $("#monitor").val(monitor);
     $("#clase").val(clase);
@@ -83,7 +87,7 @@ $(document).on("click", ".btnEditar", function(){
     
     $(".modal-header").css("background-color", "#007bff");
     $(".modal-header").css("color", "white");
-    $(".modal-title").text("Editar Reserva Clase Surf");            
+    $(".modal-title").text("Editar reserva clase surf");            
     $("#modalCRUD").modal("show");  
     
 });
@@ -104,7 +108,7 @@ $(document).on("click", ".btnBorrar", function(){
             dataType: "json",
             data: {opcion:opcion, id:id},
             success: function(){
-                tablaReservaClaseSurf.row(fila.parents('tr')).remove().draw();
+                tablaPersonas.row(fila.parents('tr')).remove().draw();
             }
         });
     }   
@@ -117,7 +121,7 @@ $("#formReservaClaseSurf").submit(function(e){
     fecha = $.trim($("#fecha").val());
     hora = $.trim($("#hora").val());    
     $.ajax({
-        url: "/paginas_admin/bd/bd_reservas_clases_surf/crud.php",
+        url: "/pagina_admin/bd/bd_reservas_clases_surf/crud.php",
         type: "POST",
         dataType: "json",
         data: {monitor:monitor, clase:clase, fecha:fecha, hora:hora, id:id, opcion:opcion},

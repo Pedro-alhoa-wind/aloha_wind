@@ -72,7 +72,7 @@ $(document).on("click", ".btnEditar", function(){
     id = parseInt(fila.find('td:eq(0)').text());
     monitor = fila.find('td:eq(1)').text();
     clase = fila.find('td:eq(2)').text();
-    fecha = parseInt(fila.find('td:eq(3)').text());
+    fecha = fila.find('td:eq(3)').text();
     hora = fila.find('td:eq(4)').text();
     
     $("#monitor").val(monitor);
@@ -104,13 +104,13 @@ $(document).on("click", ".btnBorrar", function(){
             dataType: "json",
             data: {opcion:opcion, id:id},
             success: function(){
-                tablaReservaClaseSurf.row(fila.parents('tr')).remove().draw();
+                tablaReservaClaseWindsurf.row(fila.parents('tr')).remove().draw();
             }
         });
     }   
 });
     
-$("#formClases").submit(function(e){
+$("#formReservaClaseWindsurf").submit(function(e){
     e.preventDefault();    
     monitor = $.trim($("#monitor").val());
     clase = $.trim($("#clase").val());
@@ -128,8 +128,8 @@ $("#formClases").submit(function(e){
             clase = data[0].clase;
             fecha = data[0].fecha;
             hora = data[0].hora;
-            if(opcion == 1){tablaReservaClaseSurf.row.add([id,monitor,clase,fecha,hora]).draw();}
-            else{tablaReservaClaseSurf.row(fila).data([id,monitor,clase,fecha,hora]).draw();}            
+            if(opcion == 1){tablaReservaClaseWindsurf.row.add([id,monitor,clase,fecha,hora]).draw();}
+            else{tablaReservaClaseWindsurf.row(fila).data([id,monitor,clase,fecha,hora]).draw();}            
         }        
     });
     $("#modalCRUD").modal("hide");    

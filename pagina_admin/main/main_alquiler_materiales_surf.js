@@ -75,7 +75,7 @@ $(document).on("click", ".btnEditar", function(){
     id = parseInt(fila.find('td:eq(0)').text());
     tablas = fila.find('td:eq(1)').text();
     neoprenos = fila.find('td:eq(2)').text();
-    fecha = parseInt(fila.find('td:eq(3)').text());
+    fecha = fila.find('td:eq(3)').text();
     hora = fila.find('td:eq(4)').text();
     
     

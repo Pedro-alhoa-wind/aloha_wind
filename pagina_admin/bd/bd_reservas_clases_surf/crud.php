@@ -9,7 +9,9 @@ $monitor = (isset($_POST['monitor'])) ? $_POST['monitor'] : '';
 $clase = (isset($_POST['clase'])) ? $_POST['clase'] : '';
 $fecha = (isset($_POST['fecha'])) ? $_POST['fecha'] : '';
 $hora = (isset($_POST['hora'])) ? $_POST['hora'] : '';
+$opcion = (isset($_POST['opcion'])) ? $_POST['opcion'] : '';
 $id = (isset($_POST['id'])) ? $_POST['id'] : '';
+
 
 switch($opcion){
     case 1: //alta
