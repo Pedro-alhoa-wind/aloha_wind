@@ -57,14 +57,14 @@
             </div>
 
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/pagina_admin/index_reservas_clases_surf.php">
                     <i class="fas fa-user-alt"></i>
                     <span>Clases surf</span>
                 </a>
             </li>
            
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/pagina_admin/index_reservas_clases_windsurf.php">
                     <i class="fas fa-user-alt"></i>
                     <span>Clases windsurf</span>
                 </a>
@@ -77,14 +77,14 @@
             </div>
 
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/pagina_admin/index_alquiler_materiales_surf.php">
                     <i class="fas fa-user-alt"></i>
                     <span>Materiales surf</span>
                 </a>
             </li>
            
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/pagina_admin/index_alquiler_materiales_windsurf.php">
                     <i class="fas fa-user-alt"></i>
                     <span>Materiales windsurf</span>
                 </a>
