@@ -55,7 +55,7 @@ $(document).ready(function(){
     });
     
 $("#btnNuevo").click(function(){
-    $("#formClases").trigger("reset");
+    $("#formReservaClaseSurf").trigger("reset");
     $(".modal-header").css("background-color", "#28a745");
     $(".modal-header").css("color", "white");
     $(".modal-title").text("Nueva Reserva Clase Surf");            
@@ -70,9 +70,15 @@ var fila; //capturar la fila para editar o borrar el registro
 $(document).on("click", ".btnEditar", function(){
     fila = $(this).closest("tr");
     id = parseInt(fila.find('td:eq(0)').text());
-    tipo = fila.find('td:eq(1)').text();
+    monitor = fila.find('td:eq(1)').text();
+    clase = fila.find('td:eq(2)').text();
+    fecha = parseInt(fila.find('td:eq(3)').text());
+    hora = fila.find('td:eq(4)').text();
     
-    $("#tipo").val(tipo);
+    $("#monitor").val(monitor);
+    $("#clase").val(clase);
+    $("#fecha").val(fecha);
+    $("#hora").val(hora);
     opcion = 2; //editar
     
     $(".modal-header").css("background-color", "#007bff");
@@ -93,7 +99,7 @@ $(document).on("click", ".btnBorrar", function(){
     var respuesta = confirm("¿Está seguro de quieres eliminar el registro: "+id+"?");
     if(respuesta){
         $.ajax({
-            url: "/pagina_admin/bd/bd_clases/crud.php",
+            url: "/pagina_admin/bd/bd_reservas_clases_surf/crud.php",
             type: "POST",
             dataType: "json",
             data: {opcion:opcion, id:id},
@@ -106,18 +112,24 @@ $(document).on("click", ".btnBorrar", function(){
     
 $("#formClases").submit(function(e){
     e.preventDefault();    
-    tipo = $.trim($("#tipo").val());    
+    monitor = $.trim($("#monitor").val());
+    clase = $.trim($("#clase").val());
+    fecha = $.trim($("#fecha").val());
+    hora = $.trim($("#hora").val());    
     $.ajax({
-        url: "/pagina_admin/bd/bd_clases/crud.php",
+        url: "/pagina_admin/bd/bd_reservas_clases_surf/crud.php",
         type: "POST",
         dataType: "json",
-        data: {tipo:tipo, id:id, opcion:opcion},
+        data: {monitor:monitor, clase:clase, fecha:fecha, hora:hora, id:id, opcion:opcion},
         success: function(data){  
             console.log(data);
             id = data[0].id;            
-            tipo = data[0].tipo;
-            if(opcion == 1){tablaReservaClaseSurf.row.add([id,tipo]).draw();}
-            else{tablaReservaClaseSurf.row(fila).data([id,tipo]).draw();}            
+            monitor = data[0].monitor;
+            clase = data[0].clase;
+            fecha = data[0].fecha;
+            hora = data[0].hora;
+            if(opcion == 1){tablaReservaClaseSurf.row.add([id,monitor,clase,fecha,hora]).draw();}
+            else{tablaReservaClaseSurf.row(fila).data([id,monitor,clase,fecha,hora]).draw();}            
         }        
     });
     $("#modalCRUD").modal("hide");    
