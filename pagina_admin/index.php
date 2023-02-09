@@ -238,7 +238,10 @@
 
 
     <h1>ALOHA-WIND</h1>
-
+    <br>
+    <br>
+    <br>
+    <img src="/assets/imagenes/p.p.surfero1.png" class="img-thumbnail rounded mx-auto d-block shadow-lg p-3 mb-5 bg-body rounded" alt="">
 
 </div>
 
