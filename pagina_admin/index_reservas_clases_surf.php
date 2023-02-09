@@ -414,6 +414,7 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
     <script src="vendor/datatables/pdfmake-0.1.36/pdfmake.min.js"></script>
     <script src="vendor/datatables/pdfmake-0.1.36/vfs_fonts.js"></script>
     <script src="vendor/datatables/Buttons-2.3.3/js/buttons.html5.min.js"></script>
+    <script src="/pagina_admin/main/main_reservas_clases_surf.js"></script>
      
    
 
