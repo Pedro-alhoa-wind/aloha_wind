@@ -244,7 +244,7 @@ include_once '/wamp64/www/aloha_wind/registrar/conexion.php';
 $objeto = new Conexion();
 $conexion = $objeto->Conectar();
 
-$consulta = "SELECT id, tablas, velas, neoprenos, fecha, hora, password FROM reservas_alquiler_windsurf";
+$consulta = "SELECT id, tablas, velas, neoprenos, fecha, hora FROM reservas_alquiler_windsurf";
 $resultado = $conexion->prepare($consulta);
 $resultado->execute();
 $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
