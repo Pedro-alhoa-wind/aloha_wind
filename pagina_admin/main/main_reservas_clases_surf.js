@@ -110,14 +110,14 @@ $(document).on("click", ".btnBorrar", function(){
     }   
 });
     
-$("#formClases").submit(function(e){
+$("#formReservaClaseSurf").submit(function(e){
     e.preventDefault();    
     monitor = $.trim($("#monitor").val());
     clase = $.trim($("#clase").val());
     fecha = $.trim($("#fecha").val());
     hora = $.trim($("#hora").val());    
     $.ajax({
-        url: "/pagina_admin/bd/bd_reservas_clases_surf/crud.php",
+        url: "/paginas_admin/bd/bd_reservas_clases_surf/crud.php",
         type: "POST",
         dataType: "json",
         data: {monitor:monitor, clase:clase, fecha:fecha, hora:hora, id:id, opcion:opcion},

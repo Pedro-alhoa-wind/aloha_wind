@@ -317,7 +317,7 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
                         </div>
                         <div class="form-group">
                         <label for="fecha" class="col-form-label">Fecha:</label>
-                        <input type="number" class="form-control" id="fecha">
+                        <input type="text" class="form-control" id="fecha">
                         </div>
                         <div class="form-group">
                         <label for="hora" class="col-form-label">Hora:</label>

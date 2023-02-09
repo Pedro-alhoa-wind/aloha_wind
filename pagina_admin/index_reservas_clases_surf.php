@@ -297,41 +297,41 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
         </div>    
       
 <!--Modal para CRUD-->
-<div class="modal fade" id="modalCRUD" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Nuevo reserva de clase</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-        <form id="formReservaClaseSurf">    
-            <div class="modal-body">
-                <div class="form-group">
-                <label for="monitor" class="col-form-label">Monitor:</label>
-                <input type="text" class="form-control" id="monitor">
+    <div class="modal fade" id="modalCRUD" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <div class="form-group">
-                <label for="clase" class="col-form-label">Tipo de clase:</label>
-                <input type="text" class="form-control" id="clase">
-                </div>                
-                <div class="form-group">
-                <label for="fecha" class="col-form-label">Fecha:</label>
-                <input type="text" class="form-control" id="fecha">
+            <form id="formReservaClaseSurf">    
+                <div class="modal-body">
+                    <div class="form-group">
+                    <label for="monitor" class="col-form-label">Monitor:</label>
+                    <input type="text" class="form-control" id="monitor">
+                    </div>
+                    <div class="form-group">
+                    <label for="clase" class="col-form-label">Tipo de clase:</label>
+                    <input type="text" class="form-control" id="clase">
+                    </div>                
+                    <div class="form-group">
+                    <label for="fecha" class="col-form-label">Fecha:</label>
+                    <input type="text" class="form-control" id="fecha">
+                    </div>
+                    <div class="form-group">
+                    <label for="hora" class="col-form-label">Hora:</label>
+                    <input type="text" class="form-control" id="hora">
+                    </div>            
                 </div>
-                <div class="form-group">
-                <label for="hora" class="col-form-label">Hora:</label>
-                <input type="text" class="form-control" id="hora">
-                </div>            
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-dismiss="modal">Cancelar</button>
+                    <button type="submit" id="btnGuardar" class="btn btn-dark">Guardar</button>
+                </div>
+            </form>    
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-light" data-dismiss="modal">Cancelar</button>
-                <button type="submit" id="btnGuardar" class="btn btn-dark">Guardar</button>
-            </div>
-        </form>    
         </div>
     </div>
-</div>
 
 
     
