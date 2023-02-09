@@ -16,27 +16,27 @@ $id = (isset($_POST['id'])) ? $_POST['id'] : '';
 
 switch($opcion){
     case 1: //alta
-        $consulta = "INSERT INTO reservas_alquiler_windsurf (nombre, apellido, nacionalidad, telefono, usuario, password) VALUES('$nombre', '$apellido', '$nacionalidad', '$telefono', '$usuario', '$pass') ";			
+        $consulta = "INSERT INTO reservas_alquiler_windsurf (tablas, velas, neoprenos, fecha, hora) VALUES('$tablas', '$velas', '$neoprenos', '$fecha', '$hora') ";			
         $resultado = $conexion->prepare($consulta);
         $resultado->execute(); 
 
-        $consulta = "SELECT id, nombre, apellido, nacionalidad, telefono, usuario, password FROM usuario ORDER BY id DESC LIMIT 1";
+        $consulta = "SELECT id, tablas, velas, neoprenos, fecha, hora FROM reservas_alquiler_windsurf ORDER BY id DESC LIMIT 1";
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();
         $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
         break;
     case 2: //modificación
-        $consulta = "UPDATE usuario SET nombre='$nombre', apellido='$apellido', nacionalidad='$nacionalidad', telefono='$telefono', usuario='$usuario', password='$password' WHERE id='$id' ";		
+        $consulta = "UPDATE reservas_alquiler_windsurf SET tablas='$tablas', velas='$velas', neoprenos='$neoprenos', fecha='$fecha', hora='$hora' WHERE id='$id' ";		
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();        
         
-        $consulta = "SELECT id, nombre, apellido, nacionalidad, telefono, usuario, password FROM usuario WHERE id='$id' ";       
+        $consulta = "SELECT id, tablas, velas, neoprenos, fecha, hora FROM reservas_alquiler_windsurf WHERE id='$id' ";       
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();
         $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
         break;        
     case 3://baja
-        $consulta = "DELETE FROM usuario WHERE id='$id' ";		
+        $consulta = "DELETE FROM reservas_alquiler_windsurf WHERE id='$id' ";		
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();                           
         break;        
