@@ -23,42 +23,45 @@ $(document).ready(function(){
              "sProcessing":"Procesando...",
         },
 
-        //botones de pdf, excel e imprimir
-        responsive: "true",
-        dom: 'Bfrtilp',
-        buttons:[
+    //botones de pdf, excel e imprimir
+            responsive: "true",
+            dom: 'Bfrtilp',
+             buttons:[
 
-                {
-                    extend:     'excelHtml5',
-                    text:       '<i class="fas fa-file-excel"></i>',
-                    titleAttr:  'Exportar a Excel',
-                    className:  'btn btn-success'
-                },
-                {
+           {
+               extend:     'excelHtml5',
+               text:       '<i class="fas fa-file-excel"></i>',
+               titleAttr:  'Exportar a Excel',
+               className:  'btn btn-success'
+           },
+           {
 
-                    extend:     'pdfHtml5',
-                    text:       '<i class="fas fa-file-pdf"></i>',
-                    titleAttr:  'Exportar a PDF',
-                    className:  'btn btn-danger'
-                },
+               extend:     'pdfHtml5',
+               text:       '<i class="fas fa-file-pdf"></i>',
+               titleAttr:  'Exportar a PDF',
+               className:  'btn btn-danger'
+           },
 
-                {
+           {
 
-                    extend:     'print',
-                    text:       '<i class="fa fa-print"></i>',
-                    titleAttr:  'Imprimir',
-                    className:  'btn btn-info'
+               extend:     'print',
+               text:       '<i class="fa fa-print"></i>',
+               titleAttr:  'Imprimir',
+               className:  'btn btn-info'
 
-                },
+           },
 
-        ]
+   ]
+
+
+
     });
     
 $("#btnNuevo").click(function(){
     $("#formReservaClaseWindsurf").trigger("reset");
     $(".modal-header").css("background-color", "#28a745");
     $(".modal-header").css("color", "white");
-    $(".modal-title").text("Nueva Reserva Clase Windsurf");            
+    $(".modal-title").text("Nueva reserva clase windsurf");            
     $("#modalCRUD").modal("show");        
     id=null;
     opcion = 1; //alta
@@ -75,6 +78,7 @@ $(document).on("click", ".btnEditar", function(){
     fecha = fila.find('td:eq(3)').text();
     hora = fila.find('td:eq(4)').text();
     
+    
     $("#monitor").val(monitor);
     $("#clase").val(clase);
     $("#fecha").val(fecha);
@@ -83,7 +87,7 @@ $(document).on("click", ".btnEditar", function(){
     
     $(".modal-header").css("background-color", "#007bff");
     $(".modal-header").css("color", "white");
-    $(".modal-title").text("Editar Reserva Clase Windsurf");            
+    $(".modal-title").text("Editar reserva clase windsurf");            
     $("#modalCRUD").modal("show");  
     
 });
@@ -104,7 +108,7 @@ $(document).on("click", ".btnBorrar", function(){
             dataType: "json",
             data: {opcion:opcion, id:id},
             success: function(){
-                tablaReservaClaseWindsurf.row(fila.parents('tr')).remove().draw();
+                tablaPersonas.row(fila.parents('tr')).remove().draw();
             }
         });
     }   
