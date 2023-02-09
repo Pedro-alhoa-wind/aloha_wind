@@ -51,6 +51,46 @@
 
             <!-- Divider -->
             <hr class="sidebar-divider">
+    
+            <div class="sidebar-heading">
+                Reservas clases
+            </div>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Clases surf</span>
+                </a>
+            </li>
+           
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Clases windsurf</span>
+                </a>
+            </li>
+
+            <hr class="sidebar-divider">
+
+            <div class="sidebar-heading">
+                Alquiler materiales
+            </div>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Materiales surf</span>
+                </a>
+            </li>
+           
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Materiales windsurf</span>
+                </a>
+            </li>
+
+            <hr class="sidebar-divider">
 
             <!-- Heading -->
             <div class="sidebar-heading">
@@ -71,7 +111,7 @@
                 Monitores
             </div>
 
-            <!-- Nav Item - Utilities Collapse Menu -->
+            <!-- MENU -->
             <li class="nav-item">
                 <a class="nav-link" href="/pagina_admin/index_monitores.php">
                     <i class="far fa-id-badge" style="font-size:24px"></i>
@@ -125,7 +165,7 @@
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
-            <!-- Sidebar Toggler (Sidebar) -->
+            
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
@@ -134,21 +174,21 @@
         </ul>
         <!-- End of Sidebar -->
 
-        <!-- Content Wrapper -->
+        
         <div id="content-wrapper" class="d-flex flex-column">
 
-            <!-- Main Content -->
+            
             <div id="content">
 
-                <!-- Topbar -->
+               
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
-                    <!-- Sidebar Toggle (Topbar) -->
+                    
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
                     </button>
 
-                    <!-- Topbar Navbar -->
+                    
                     <ul class="navbar-nav ml-auto">
 
                         
