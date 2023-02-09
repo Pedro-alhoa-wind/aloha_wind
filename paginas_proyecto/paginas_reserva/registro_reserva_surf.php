@@ -55,9 +55,12 @@ $conexion = null;
         <div class="row">
             <div class="col-md-12">
                 <img src="/assets/imagenes/logo_aloha_wind_favicon.png" class="d-grid gap-3 col-2 mx-auto" alt="" style="width: 15%;">
-                <p class="titulo text-md-center my-5 fs-1 fw-bolder">¡¡¡Muchas gracias!!!</p>
                 <br>
-                <p class="titulo text-md-center my-5 fs-1 fw-bolder">El equipo <?php echo $monitor; ?>de Aloha-Wind le agradece que haya confiado en nosotros, te esperamos.</p>
+                <p class="titulo text-md-center my-5 fs-4 fw-light">Por último, le confirmamos, que usted acaba de realizar una reserva de una clase de SURF,  
+                con nuestro monitor <?php  echo $monitor; ?>, el tipo de clase escogida es <?php echo $clase; ?>, el día <?php echo $fecha; ?> y a la <?php echo $hora; ?> h. 
+                si algunos de los datos no son correcto, no dudes en ponerte en contacto con nosotros.</p>
+                <br>
+                <p class="titulo text-md-center my-5 fs-1 fw-bolder">¡¡¡Muchas gracias!!! por confiar en nosotros.</p>
                 <br>
                 <img src="/assets/imagenes/saludo.png" class="d-grid gap-3 col-2 mx-auto" alt="" style="width: 20%;">
             </div>
