@@ -48,7 +48,7 @@
     <!-- Body -->
 
     <div class="container">
-        <p class="titulo text-md-center my-5 fs-1 fw-bolder">Selecciona tu alquiler material de Surf</p>
+        <p class="titulo text-md-center my-5 fs-1 fw-bolder">Selecciona tu material de Surf</p>
     </div>
 
     <!-- Elegir la tabla -->

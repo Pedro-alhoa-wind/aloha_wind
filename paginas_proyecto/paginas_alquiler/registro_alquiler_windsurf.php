@@ -58,11 +58,11 @@ $conexion = null;
             <div class="col-md-12">
                 <img src="/assets/imagenes/logo_aloha_wind_favicon.png" class="d-grid gap-3 col-2 mx-auto" alt="" style="width: 15%;">
                 <br>
-                <p class="titulo text-md-center my-5 fs-4 fw-light">Por último, le confirmamos, que usted acaba de realizar un alquiler de un equipo de WINDSURF compuesto por,  
-                una tabla de <?php  echo $tablas; ?>, una <?php echo $velas; ?>, para el día <?php echo $fecha; ?> y a la <?php echo $hora; ?> h. 
-                si algunos de los datos no son correcto, no dudes en ponerte en contacto con nosotros.</p>
+                <p class="titulo text-md-center my-5 fs-4 fw-light">Gracias por confiar en nosotros.<br>
+                Has realizado el alquiler de una tabla de <?php  echo $tablas; ?> y una <?php echo $velas; ?> para el día <?php echo $fecha; ?> a las <?php echo $hora; ?> h. 
+                </p>
                 <br>
-                <p class="titulo text-md-center my-5 fs-1 fw-bolder">¡¡¡Muchas gracias!!! por confiar en nosotros.</p>
+                <p class="titulo text-md-center my-5 fs-1 fw-bolder">¡Te esperamos!</p>
                 <br>
                 <img src="/assets/imagenes/saludo.png" class="d-grid gap-3 col-2 mx-auto" alt="" style="width: 20%;">
             </div>

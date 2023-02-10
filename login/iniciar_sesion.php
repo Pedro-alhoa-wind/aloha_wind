@@ -62,7 +62,7 @@
 
                             </div><br>
 
-                            <p class="text-center fs-5" id="pulsa_aqui" >Si aún no tiene una cuenta <a class="link" href="/registrar/registrar.php">Pulse aquí</a></p>
+                            <p class="text-center fs-5" id="pulsa_aqui" >Si aún no tienes una cuenta <a class="link" href="/registrar/registrar.php">pulsa aquí</a></p>
 
 
                     </form>

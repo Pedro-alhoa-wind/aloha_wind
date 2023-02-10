@@ -61,7 +61,7 @@
               <img src="/assets/imagenes/surf redondo.png" class="card-img-top p-md-0" alt="surf">
               </div>
               <div class="col-md-8" style="font-family: 'Montserrat', sans-serif;">
-                <p class="text-xl-center fs-4 fw-bold fst-italic">Aquí podras reservar tus clases o alquilar tu material duro.</p>
+                <p class="text-xl-center fs-4 fw-bold fst-italic">Aquí podrás reservar tus clases o alquilar tu material duro.</p>
               </div>
 
             </div>
@@ -101,7 +101,7 @@
               <img src="/assets/imagenes/windsurf redondo.png" class="card-img-top p-md-0" alt="windsurf">
               </div>
               <div class="col-md-8" style="font-family: 'Montserrat', sans-serif;">
-                <p class="text-xl-center fs-4 fw-bold fst-italic">Aquí podras reservar tus clases o alquilar tu material duro.</p>
+                <p class="text-xl-center fs-4 fw-bold fst-italic">Aquí podrás reservar tus clases o alquilar tu material duro.</p>
               </div>
             </div>
 

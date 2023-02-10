@@ -54,7 +54,7 @@
                             <div class="col-1"></div>
                             <div class="col-md-5">
                                 <label for="apellidosUsuario" class="form-label">Apellidos</label>
-                                <input id="apellidosUsuario" class="form-control" name="apellido" type="text" placeholder="Escribe tu apellidos...." required>
+                                <input id="apellidosUsuario" class="form-control" name="apellido" type="text" placeholder="Escribe tus apellidos...." required>
                             </div>
                         </div>
                     </div>
